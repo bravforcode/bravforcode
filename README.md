@@ -214,13 +214,13 @@ graph TD
 
 <div align="center">
 
-<!-- GitHub Stats - dark premium theme -->
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=bravforcode&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1&include_all_commits=true&count_private=true" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bravforcode&layout=compact&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&text_color=cbd5e1&langs_count=8" />
+<!-- GitHub Stats - dark premium theme — fixed camo: removed count_private/include_all_commits, migrate streak to demolab -->
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=bravforcode&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1&cache_seconds=1800" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bravforcode&layout=compact&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&text_color=cbd5e1&langs_count=8&cache_seconds=1800" />
 
 <br/>
 
-<img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=bravforcode&theme=tokyonight&hide_border=true&background=0f172a&ring=38bdf8&fire=38bdf8&currStreakNum=cbd5e1&sideNums=cbd5e1&currStreakLabel=38bdf8&sideLabels=cbd5e1&dates=cbd5e1" />
+<img width="100%" src="https://streak-stats.demolab.com?user=bravforcode&theme=tokyonight&hide_border=true&background=0f172a&ring=38bdf8&fire=38bdf8&currStreakNum=cbd5e1&sideNums=cbd5e1&currStreakLabel=38bdf8&sideLabels=cbd5e1&dates=cbd5e1" />
 
 <br/>
 
