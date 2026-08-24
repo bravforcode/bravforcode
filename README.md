@@ -216,9 +216,14 @@ graph TD
 
 <div align="center">
 
-<!-- GitHub Stats - dark premium theme — fixed camo: removed count_private/include_all_commits, migrate streak to demolab -->
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=bravforcode&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1&cache_seconds=1800" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bravforcode&layout=compact&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&text_color=cbd5e1&langs_count=8&cache_seconds=1800" />
+<!-- Live stats via shields.io (reliable) -->
+<p>
+  <img src="https://img.shields.io/github/followers/bravforcode?label=Followers&style=for-the-badge&color=0ea5e9" />
+  <img src="https://img.shields.io/github/stars/bravforcode?affiliations=OWNER&label=Stars&style=for-the-badge&color=38bdf8" />
+  <img src="https://img.shields.io/github/repos/bravforcode?label=Repos&style=for-the-badge&color=7c3aed" />
+  <img src="https://img.shields.io/github/commit-activity/m/bravforcode?label=Commits%2Fmonth&style=for-the-badge&color=10b981" />
+  <img src="https://img.shields.io/github/issues-pr/bravforcode?label=PRs&style=for-the-badge&color=f59e0b" />
+</p>
 
 <br/>
 
@@ -238,33 +243,33 @@ graph TD
 
 ### — All Projects — Pinned Showcase (19 repos)
 
-> GitHub จำกัด Pin ในหน้าโปรไฟล์ได้ **6 ตัวเท่านั้น** — พี่เลยทำ Showcase ให้ครบ 19 ตัวแบบการ์ด Pin สวยๆ ไว้ใน README นี้แทน ดูเหมือน Pin ทุกโปรเจคเลย
-
 <div align="center">
 
-<a href="https://github.com/bravforcode/graxia-os"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=graxia-os&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
-<a href="https://github.com/bravforcode/adminmate-ai"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=adminmate-ai&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
-<a href="https://github.com/bravforcode/enterprise-agent-os"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=enterprise-agent-os&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
-<a href="https://github.com/bravforcode/vibescity-live"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=vibescity-live&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
-<a href="https://github.com/bravforcode/Intersite-Track"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=Intersite-Track&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
-<a href="https://github.com/bravforcode/flashfix-ai"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=flashfix-ai&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
-<a href="https://github.com/bravforcode/Safescan-ai"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=Safescan-ai&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
-<a href="https://github.com/bravforcode/krisphy"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=krisphy&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
-<a href="https://github.com/bravforcode/thaireview-platform"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=thaireview-platform&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
-<a href="https://github.com/bravforcode/thailand-flood-monitor"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=thailand-flood-monitor&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
-<a href="https://github.com/bravforcode/mu-x-harvard"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=mu-x-harvard&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
-<a href="https://github.com/bravforcode/gosoft"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=gosoft&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
-<a href="https://github.com/bravforcode/OBS-rag"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=OBS-rag&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
-<a href="https://github.com/bravforcode/portfolio-production"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=portfolio-production&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
-<a href="https://github.com/bravforcode/ai-factory"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=ai-factory&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
-<a href="https://github.com/bravforcode/Solven"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=Solven&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
-<a href="https://github.com/bravforcode/Train-llm"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=Train-llm&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
-<a href="https://github.com/bravforcode/graxia-trade"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=graxia-trade&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
-<a href="https://github.com/bravforcode/bravforcode"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=bravforcode&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
+| Repo | What it is |
+|---|---|
+| [**graxia-os**](https://github.com/bravforcode/graxia-os) | Personal AI Chief of Staff — lead-gen + outreach + CRM · `FastAPI` `React` `Celery` |
+| [**adminmate-ai**](https://github.com/bravforcode/adminmate-ai) | HR Platform for SEA SMEs — 1,777 pgTAP tests · `React 19` `Supabase` `Gemini` |
+| [**enterprise-agent-os**](https://github.com/bravforcode/enterprise-agent-os) | Universal AI Agent OS — 15 agents, 7 orchestration patterns · `Python` `MCP` `Qdrant` |
+| [**vibescity-live**](https://github.com/bravforcode/vibescity-live) | Tourism platform — **100k+ users**, presented to TAT · `Python` `Next.js` |
+| [**Intersite-Track**](https://github.com/bravforcode/Intersite-Track) | Enterprise task & project management — RBAC + audit · `React 19` `Express` |
+| [**flashfix-ai**](https://github.com/bravforcode/flashfix-ai) | Ed-tech teach-back remediation engine · `TypeScript` `Next.js` |
+| [**Safescan-ai**](https://github.com/bravforcode/Safescan-ai) | QR/barcode product safety scanner — allergen alerts · `React` `Supabase` |
+| [**krisphy**](https://github.com/bravforcode/krisphy) | Receipt & ledger tracking + LINE integration · `TypeScript` `LINE API` |
+| [**thaireview-platform**](https://github.com/bravforcode/thaireview-platform) | AI + Blockchain review verification · `WangchanBERTa` `Solidity` |
+| [**thailand-flood-monitor**](https://github.com/bravforcode/thailand-flood-monitor) | Real-time flood monitoring — IoT + ML predictions · `TensorFlow.js` `Leaflet` |
+| [**mu-x-harvard**](https://github.com/bravforcode/mu-x-harvard) | Mahidol x Harvard Health Systems Hackathon — selected /196 teams · `HealthTech` |
+| [**gosoft**](https://github.com/bravforcode/gosoft) | Gosoft Retail Tech Hackathon — Smart Shelf Vision AI · `Python` `CV` |
+| [**OBS-rag**](https://github.com/bravforcode/OBS-rag) | Obsidian second-brain RAG — hybrid retrieval · `Python` `RAG` |
+| [**portfolio-production**](https://github.com/bravforcode/portfolio-production) | Production portfolio site · `TypeScript` |
+| [**ai-factory**](https://github.com/bravforcode/ai-factory) | Digital product marketplace — 10 products + Stripe · `HTML` `Stripe` |
+| [**Solven**](https://github.com/bravforcode/Solven) | Structured problem-solving platform · `TypeScript` |
+| [**graxia-trade**](https://github.com/bravforcode/graxia-trade) | Crypto trading research (freqtrade fork) · `Python` |
+| [**Train-llm**](https://github.com/bravforcode/Train-llm) | Archived — active LLM work in enterprise-agent-os · `Archived` |
+| [**bravforcode**](https://github.com/bravforcode/bravforcode) | This profile — achievements, certificates, showcase · `README` |
 
 </div>
 
-> **หมายเหตุ:** 6 ตัวบนสุดคือตัวที่ GitHub ให้ Pin ได้จริง (ตั้งในหน้าโปรไฟล์) — ที่เหลือโชว์เป็นการ์ดแบบเดียวกันใน README นี้ครบทุกตัวแล้วครับ
+> **หมายเหตุ:** 6 ตัวบนสุดคือตัวที่ GitHub ให้ Pin ได้จริง (ตั้งในหน้าโปรไฟล์) — ที่เหลือโชว์ครบทุกตัวในตารางนี้
 
 ---
 
@@ -276,12 +281,10 @@ graph TD
 |---|---|---|---|
 | <img src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png" width="100" /><br/>**Pull Shark x3**<br/>_32+ merged pull requests — shipping velocity proven_ | <img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" width="100" /><br/>**YOLO**<br/>_Merged PR without review_ | <img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" width="100" /><br/>**Quickdraw**<br/>_Closed issue/PR within 5 min of opening_ | <img src="https://github.githubassets.com/assets/pair-extraordinaire-default-579438a20e01.png" width="100" /><br/>**Pair Extraordinaire**<br/>_Co-authored commits on merged PR_ |
 
-<img src="https://github-profile-trophy.vercel.app/?username=bravforcode&theme=tokyonight&column=7&no-frame=true&no-bg=true&margin-w=8" width="100%" alt="trophy" />
-
 <p>
   <img src="https://img.shields.io/badge/Achievements-5_Unlocked-0ea5e9?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Pull_Shark-x3-38bdf8?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Next_Target-Starstruck-7c3aed?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Galaxy_Brain-2_Answers-7c3aed?style=for-the-badge" />
 </p>
 
 </div>
@@ -292,17 +295,6 @@ graph TD
 - **Quickdraw** — operates at high velocity, triages and closes quickly
 - **YOLO** — confident to ship when needed (with safety nets elsewhere: 1,777 pgTAP, CI)
 - **Pair Extraordinaire** — collaborates via co-authored commits (real team player)
-
-**How to unlock more (roadmap I can run for you):**
-| Achievement | How to earn | Status |
-|---|---|---|
-| **Starstruck** | Get 16+ stars on a repo — **thaireview-platform + vibescity-live seeded with 1 star each, star buttons live on profile** | 🟡 1/16 in progress |
-| **Public Sponsor** | **Sponsors profile LIVE with 3 tiers (50/150/1000 THB) — github.com/sponsors/bravforcode** | ✅ Earned |
-| **Galaxy Brain** | **2 accepted answers live**: [graxia-os #47](https://github.com/bravforcode/graxia-os/discussions/47) + [adminmate-ai #19](https://github.com/bravforcode/adminmate-ai/discussions/19) | ✅ Earned |
-| **Arctic Code Vault** | Contribute to a repo archived to Arctic Vault (Feb 2026 archive) | 🔜 Auto on next archive |
-| **Pair Extraordinaire (more)** | More co-authored PRs — we can generate with pair commits | ✅ Already earned |
-
-> Want me to farm the next 3 achievements automatically? I can open a Discussion, get a star campaign, and create a sponsor profile in one go.
 
 ---
 
