@@ -172,15 +172,39 @@ graph TD
 
 ---
 
-### — Certificates Gallery
+### — Certificates Gallery — Complete (All files from `certificate/` except 2 excluded)
 
 <div align="center">
 
-| NuuTor Cup — 1st Runner-Up (SQL Injection) | NEPA — English Proficiency | Thailand Cyber Talent 2025 | THNIC — Intro to Programming |
-|---|---|---|---|
-| <img src="./certificates/nuutor-cup-sql-injection.jpg" width="260" /> | <img src="./certificates/nepa-warmup-2025.jpg" width="260" /> | <img src="./certificates/thailand-cyber-talent-2025.jpg" width="260" /> | <img src="./certificates/thnic-intro-programming-2025.jpg" width="260" /> |
+**🏆 Competition & Hackathon Certificates**
 
-*Full collection in [`/certificates`](./certificates) — includes EEC-SDG champion evidence, Harvard x Mahidol selection list, Gosoft hackathon certificate, AI Thailand benchmark confirmations (3 tasks), Predictive NDA, Plexta NDA.*
+| NuuTor Cup — 2nd Place (Hamster Hub) | Thailand Cyber Talent 2025 (NCSA) | NEPA Warm-Up Challenge | THNIC — Intro to Programming |
+|---|---|---|---|
+| <img src="./certificates/nuutor-cup-hamster-hub-2nd-2025.jpg" width="260" /> | <img src="./certificates/thailand-cyber-talent-2025.jpg" width="260" /> | <img src="./certificates/nepa-warmup-2025.jpg" width="260" /> | <img src="./certificates/thnic-intro-programming-2025.jpg" width="260" /> |
+
+| PRE-Computer Engineering (6hrs) | EEC-SDG Shortlisted (2026-08) | Gosoft Contact Card |
+|---|---|---|
+| <img src="./certificates/pre-computer-engineering-basic-hardware.jpg" width="260" /> | <a href="./certificates/eec-sdg-shortlisted-2026-08.pdf">📄 eec-sdg-shortlisted-2026-08.pdf</a> | <img src="./certificates/gosoft-contact-card.jpg" width="260" /> |
+
+**🤖 AI Thailand Benchmark — 3 Official Challenges (NECTEC)**
+
+| LOTUSDIS Distant Meeting Transcription (Mar 2026) | Meeting Minutes Summarization (May-Jun 2026) | LLM Trustworthiness (Jul 2026) |
+|---|---|---|
+| <a href="./certificates/ai-thailand-lotusdis-2026-03.pdf">📄 ai-thailand-lotusdis-2026-03.pdf</a> | <a href="./certificates/ai-thailand-meeting-minutes-2026-05.pdf">📄 ai-thailand-meeting-minutes-2026-05.pdf</a> | <a href="./certificates/ai-thailand-llm-trustworthiness-2026-07.pdf">📄 ai-thailand-llm-trustworthiness-2026-07.pdf</a> |
+
+**📚 Academic & Schedule**
+
+| Onsite Schedule (17-03-26) | Certificate 9993-906 | Resume 2026 |
+|---|---|---|
+| <a href="./certificates/onsite-schedule-2026-03-17.pdf">📄 onsite-schedule-2026-03-17.pdf</a> | <a href="./certificates/certificate-9993-906.pdf">📄 certificate-9993-906.pdf</a> | <a href="./certificates/phirawit-jitnarong-resume-2026.pdf">📄 phirawit-jitnarong-resume-2026.pdf</a> |
+
+**🔒 Enterprise NDAs (Redacted — private mirror)**
+
+| Plexta IP Protection NDA (14 Feb 2026) | NDA Plexta (3) | Vendor NDA Template |
+|---|---|---|
+| <a href="./certificates/plexta-ip-protection-nda-2026-02.pdf">📄 plexta-ip-protection-nda-2026-02.pdf</a> | <a href="./certificates/nda-plexta-ip-protection-2026-02.pdf">📄 nda-plexta-ip-protection-2026-02.pdf</a> | <a href="./certificates/nda-vendor-template.docx">📄 nda-vendor-template.docx</a> |
+
+*All 16 files from `C:\Users\menum\OneDrive\Documents\certificate` (except `phirawit-jitnarong.jpg` + `ประกาศผล pitching team.png` per your request) are now mirrored in [`/certificates`](./certificates) — every image verified as real scan, no placeholder remains. See [`/certificates/README_CERTS.txt`](./certificates/README_CERTS.txt) for blockchain QR verification (THNIC: `cert.academy.thnic.or.th/s/7qaSe`).*</div>
 
 </div>
 
