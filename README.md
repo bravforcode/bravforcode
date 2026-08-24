@@ -210,6 +210,38 @@ graph TD
 
 ---
 
+### — All Projects — Pinned Showcase (19 repos)
+
+> GitHub จำกัด Pin ในหน้าโปรไฟล์ได้ **6 ตัวเท่านั้น** — พี่เลยทำ Showcase ให้ครบ 19 ตัวแบบการ์ด Pin สวยๆ ไว้ใน README นี้แทน ดูเหมือน Pin ทุกโปรเจคเลย
+
+<div align="center">
+
+<a href="https://github.com/bravforcode/graxia-os"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=graxia-os&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
+<a href="https://github.com/bravforcode/adminmate-ai"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=adminmate-ai&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
+<a href="https://github.com/bravforcode/enterprise-agent-os"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=enterprise-agent-os&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
+<a href="https://github.com/bravforcode/vibescity-live"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=vibescity-live&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
+<a href="https://github.com/bravforcode/Intersite-Track"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=Intersite-Track&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
+<a href="https://github.com/bravforcode/flashfix-ai"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=flashfix-ai&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
+<a href="https://github.com/bravforcode/Safescan-ai"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=Safescan-ai&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
+<a href="https://github.com/bravforcode/krisphy"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=krisphy&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
+<a href="https://github.com/bravforcode/thaireview-platform"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=thaireview-platform&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
+<a href="https://github.com/bravforcode/thailand-flood-monitor"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=thailand-flood-monitor&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
+<a href="https://github.com/bravforcode/mu-x-harvard"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=mu-x-harvard&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
+<a href="https://github.com/bravforcode/gosoft"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=gosoft&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
+<a href="https://github.com/bravforcode/OBS-rag"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=OBS-rag&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
+<a href="https://github.com/bravforcode/portfolio-production"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=portfolio-production&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
+<a href="https://github.com/bravforcode/ai-factory"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=ai-factory&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
+<a href="https://github.com/bravforcode/Solven"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=Solven&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
+<a href="https://github.com/bravforcode/Train-llm"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=Train-llm&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
+<a href="https://github.com/bravforcode/graxia-trade"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=graxia-trade&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
+<a href="https://github.com/bravforcode/bravforcode"><img src="https://github-readme-stats.vercel.app/api/pin/?username=bravforcode&repo=bravforcode&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=38bdf8&text_color=cbd5e1" /></a>
+
+</div>
+
+> **หมายเหตุ:** 6 ตัวบนสุดคือตัวที่ GitHub ให้ Pin ได้จริง (ตั้งในหน้าโปรไฟล์) — ที่เหลือโชว์เป็นการ์ดแบบเดียวกันใน README นี้ครบทุกตัวแล้วครับ
+
+---
+
 ### — By the Numbers
 
 <div align="center">
