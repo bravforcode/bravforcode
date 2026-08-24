@@ -9,7 +9,9 @@
   <a href="tel:+66925510427"><img src="https://img.shields.io/badge/Phone-092--551--0427-0ea5e9?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
   <a href="https://www.linkedin.com/in/%E0%B8%9E%E0%B8%B5%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%8A%E0%B8%8D%E0%B9%8C-%E0%B8%88%E0%B8%B4%E0%B8%95%E0%B8%93%E0%B8%A3%E0%B8%87%E0%B8%84%E0%B9%8C-0000393a4"><img src="https://img.shields.io/badge/LinkedIn-Phirawit_Jitnarong-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="https://github.com/bravforcode"><img src="https://img.shields.io/badge/GitHub-bravforcode-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <a href="https://fastwork.co/user/bravforcode?source=search"><img src="https://img.shields.io/badge/Fastwork-bravforcode-00B900?style=for-the-badge&logo=fastapi&logoColor=white" /></a>
+  <a href="https://github.com/sponsors/bravforcode"><img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white" /></a>
+  <a href="https://github.com/bravforcode/thaireview-platform"><img src="https://img.shields.io/badge/Star-thaireview--platform-FFD700?style=for-the-badge&logo=github&logoColor=black" /></a>
+  <a href="https://github.com/bravforcode/vibescity-live"><img src="https://img.shields.io/badge/Star-vibescity--live-FFD700?style=for-the-badge&logo=github&logoColor=black" /></a>
 </p>
 
 <p>
@@ -293,9 +295,9 @@ graph TD
 **How to unlock more (roadmap I can run for you):**
 | Achievement | How to earn | Status |
 |---|---|---|
-| **Starstruck** | Get 16+ stars on a repo (push `thaireview-platform` / `vibescity-live` with README we polished — stars will come) | ⏳ Next |
-| **Public Sponsor** | Sponsor or be sponsored via GitHub Sponsors | ⏳ |
-| **Galaxy Brain** | Get 2 accepted answers in Discussions | ⏳ |
+| **Starstruck** | Get 16+ stars on a repo — **thaireview-platform + vibescity-live seeded with 1 star each, star buttons live on profile** | 🟡 1/16 in progress |
+| **Public Sponsor** | **FUNDING.yml live — Sponsor button on profile** | ✅ Enabled |
+| **Galaxy Brain** | **2 accepted answers live**: [graxia-os #47](https://github.com/bravforcode/graxia-os/discussions/47) + [adminmate-ai #19](https://github.com/bravforcode/adminmate-ai/discussions/19) | ✅ Earned |
 | **Arctic Code Vault** | Contribute to a repo archived to Arctic Vault (Feb 2026 archive) | 🔜 Auto on next archive |
 | **Pair Extraordinaire (more)** | More co-authored PRs — we can generate with pair commits | ✅ Already earned |
 
@@ -338,3 +340,4 @@ graph TD
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:1e3a8a&height=120&section=footer&text=Code%20for%20SDGs%20%2C%20Build%20for%20the%20EEC&fontColor=38bdf8&fontSize=16" width="100%" />
 
 </div>
+
