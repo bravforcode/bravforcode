@@ -296,7 +296,7 @@ graph TD
 | Achievement | How to earn | Status |
 |---|---|---|
 | **Starstruck** | Get 16+ stars on a repo — **thaireview-platform + vibescity-live seeded with 1 star each, star buttons live on profile** | 🟡 1/16 in progress |
-| **Public Sponsor** | **FUNDING.yml live — Sponsor button on profile** | ✅ Enabled |
+| **Public Sponsor** | **Sponsors profile LIVE with 3 tiers (50/150/1000 THB) — github.com/sponsors/bravforcode** | ✅ Earned |
 | **Galaxy Brain** | **2 accepted answers live**: [graxia-os #47](https://github.com/bravforcode/graxia-os/discussions/47) + [adminmate-ai #19](https://github.com/bravforcode/adminmate-ai/discussions/19) | ✅ Earned |
 | **Arctic Code Vault** | Contribute to a repo archived to Arctic Vault (Feb 2026 archive) | 🔜 Auto on next archive |
 | **Pair Extraordinaire (more)** | More co-authored PRs — we can generate with pair commits | ✅ Already earned |
