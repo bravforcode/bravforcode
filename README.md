@@ -274,20 +274,21 @@ graph TD
 
 | Pull Shark x2 | YOLO | Quickdraw | Pair Extraordinaire |
 |---|---|---|---|
-| <img src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png" width="100" /><br/>**Pull Shark x2**<br/>_2 merged pull requests — short window_ | <img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" width="100" /><br/>**YOLO**<br/>_Merged PR without review_ | <img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" width="100" /><br/>**Quickdraw**<br/>_Closed issue/PR within 5 min of opening_ | <img src="https://github.githubassets.com/assets/pair-extraordinaire-default-579438a20e01.png" width="100" /><br/>**Pair Extraordinaire**<br/>_Co-authored commits on merged PR_ |
+| <img src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png" width="100" /><br/>**Pull Shark x3**<br/>_32+ merged pull requests — shipping velocity proven_ | <img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" width="100" /><br/>**YOLO**<br/>_Merged PR without review_ | <img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" width="100" /><br/>**Quickdraw**<br/>_Closed issue/PR within 5 min of opening_ | <img src="https://github.githubassets.com/assets/pair-extraordinaire-default-579438a20e01.png" width="100" /><br/>**Pair Extraordinaire**<br/>_Co-authored commits on merged PR_ |
 
 <img src="https://github-profile-trophy.vercel.app/?username=bravforcode&theme=tokyonight&column=7&no-frame=true&no-bg=true&margin-w=8" width="100%" alt="trophy" />
 
 <p>
-  <img src="https://img.shields.io/badge/Achievements-4_Unlocked-0ea5e9?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Pull_Shark-x2-38bdf8?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Achievements-5_Unlocked-0ea5e9?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Pull_Shark-x3-38bdf8?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Next_Target-Starstruck-7c3aed?style=for-the-badge" />
 </p>
 
 </div>
 
 **What they mean for hiring managers:**
-- **Pull Shark x2** — proven to ship PRs that get merged fast (not just committed)
+- **Pull Shark x3** — proven to ship PRs that get merged fast (32+ merged, across 16 repos)
+- **Galaxy Brain** — 2 accepted answers in Discussions (community trust)
 - **Quickdraw** — operates at high velocity, triages and closes quickly
 - **YOLO** — confident to ship when needed (with safety nets elsewhere: 1,777 pgTAP, CI)
 - **Pair Extraordinaire** — collaborates via co-authored commits (real team player)
