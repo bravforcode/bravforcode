@@ -47,4 +47,4 @@ docker compose up --build
 - [ ] v1 shipped — what’s next
 
 ## Contact
-Phirawit Jitnarong — nxme176@gmail.com — 092-551-0427
+Phirawit Jitnarong — nxme176@gmail.com
