@@ -24,7 +24,7 @@ I am looking for a 2027 internship in software, data, machine learning or quanti
 
 Method: exact BSM inversion for matched pairs, then simulated quote noise to see where the spread stops being informative.
 
-What it does not show: no market data, no trading claim, and no independent replication yet. The rankings hold only for the synthetic generator and seeds I chose.
+What it does not show: no market data, no trading claim, and no independent replication yet. The results come from a synthetic generator, not from market quotes.
 
 What makes it checkable: a uv lockfile, CI on Ubuntu and Windows across Python 3.12–3.14, and SHA-256 manifests for the review package (268 entries) and the CPIV-only subset (171 entries).
 
@@ -33,9 +33,7 @@ Read the note and its limitations: github.com/bravforcode/Quant-paper""",
  ("Why query a historical UTC snapshot", "Snapshot schedule table from gmx-g5-prospective-2026/README (capture)",
   """Why does the GMX G5 collector query a specified historical UTC snapshot instead of "now"?
 
-Scheduled jobs can run late or be skipped. If the script used the runner's clock, a late run would silently record a different moment. The collector always queries the snapshot it was asked for, and retries missing receipts on later runs.
-
-Receipts hold aggregate counts, ratios and hashes only: no wallet addresses and no raw position rows.
+Scheduled jobs can run late or be skipped. If the script used the runner's clock, a late run would silently record a different moment. The collector always queries the snapshot it was asked for.
 
 The protocol was hashed on 26 Sep 2026, before the 27 Sep baseline. Protocol SHA-256 efa241ab…
 
@@ -46,10 +44,10 @@ Lesson: the time a value refers to should be an input to the code, not the time 
 
 If wage is part of the edge cost, a high-paying job can make a path look cheaper, and the non-negative weights that Dijkstra needs stop being guaranteed.
 
-So JobShield splits the work. Layer 1 finds paths with a non-negative cost (skill distance plus risk). Layer 2 ranks destinations by wage gain minus path cost.
+So JobShield splits the work. Layer 1 finds paths with non-negative edge costs. Layer 2 ranks destinations using wage, so wage never changes the path search itself.
 
-The input is 153 hand-written sample postings, so read the output as a demonstration of the method, not as labour-market fact. Live demo and 145 tests: jobsume.vercel.app""",
-  "jobsume.vercel.app · github.com/bravforcode/jobshield-ai"),
+The input is 153 hand-written sample postings, so read the output as a demonstration of the method, not as labour-market fact. 145 tests in the repository: github.com/bravforcode/jobshield-ai""",
+  "github.com/bravforcode/jobshield-ai"),
  ("Human approval before anything is sent", "Celery queue diagram (draw from graxia-os README architecture)",
   """Agent tools should not send anything on their own.
 
@@ -85,21 +83,21 @@ Stack: React 19, TypeScript and Supabase. github.com/bravforcode/adminmate-ai"""
 • Meeting Minutes Summarization (May)
 • LLM Trustworthiness (July)
 
-Certificates are in the profile repository: github.com/bravforcode/bravforcode""",
-  "github.com/bravforcode/bravforcode/tree/main/certificates"),
+Profile and evidence index: github.com/bravforcode""",
+  "github.com/bravforcode/bravforcode"),
  ("Mahidol × Harvard Health Systems Hackathon", "Schedule document (blur names first)",
-  """In April 2026 I was selected as a participant in the Mahidol × Harvard Health Systems Innovation Lab Hackathon. The onsite schedule is in the certificates folder of the profile repository.""",
-  "github.com/bravforcode/bravforcode/tree/main/certificates"),
+  """In April 2026 I was selected as a participant in the Mahidol × Harvard Health Systems Innovation Lab Hackathon.""",
+  "github.com/bravforcode"),
 ]
 
 SHORT = [
  "A DOI does not make research correct. It makes it citable and checkable. The CPIV README says what it does not show: synthetic data, no alpha claim, no independent replication.",
  "Freeze the protocol before you look at the data. The GMX G5 protocol was hashed on 26 Sep 2026, the day before the baseline. Changing it later would be visible.",
  "Fixed-time snapshots beat 'whenever the job ran'. The time a number refers to is an input, not the clock of the machine that computed it.",
- "A recommender should be able to explain its path. JobShield shows the bridging skills for each hop. If the explanation is weak, the ranking is not trustworthy either.",
+ "A recommender should be able to explain its path. If the explanation is weak, the ranking is not trustworthy either.",
  "An AI draft is not an action. Graxia OS keeps a human approval step before anything is sent.",
  "A test that passes on my laptop is a start. I now run CI on Ubuntu and Windows, because a script that needs one specific shell is not reproducible.",
- "Access rules belong in the database. A hidden button is not a permission.",
+ "A rule is only as good as the test that checks it. Name the rule in the test title, so a failure tells you what broke.",
  "Synthetic data is fine for a method note, if the first paragraph says so.",
  "Limits are part of the result. Say them first.",
 ]
@@ -118,16 +116,25 @@ CONNECT = [
 ]
 CONNECT_NOTE = "Hi [name], I'm a first-year at Burapha working on reproducible data and quant research. I read your [specific post or project]. Would be glad to connect."
 
-SUMMARY = """I am preparing for 2027 internship interviews in software, data and quantitative research.
+SUMMARIES = [
+ """Question for readers: when you review a data or quant project, what do you check first: the code, the data, or the stated limits?
 
-Question for readers: what did a first interview for a quant or data internship actually ask you? I want to know which skills to show with evidence before I apply.
+Projects with links: github.com/bravforcode""",
+ """Question for readers: for a first internship, is a public repository with tests or a paper with a DOI more useful to a recruiter? Why?
 
-Projects with links: github.com/bravforcode"""
+Projects with links: github.com/bravforcode""",
+ """Question for readers: what is one thing you wish a student project README had told you before you started?
+
+Projects with links: github.com/bravforcode""",
+ """Question for readers: which result would make you stop trusting a backtest?
+
+Projects with links: github.com/bravforcode""",
+]
 
 def day_type(d):
     return {0: "full", 1: "short", 2: "engage", 3: "full", 4: "short", 5: "engage", 6: "summary"}[d.weekday()]
 
-rows, full_i, short_i, ENG_i = [], 0, 0, 0
+rows, full_i, short_i, ENG_i, sum_i = [], 0, 0, 0, 0
 for n in range(30):
     d = START + dt.timedelta(days=n)
     kind = day_type(d)
@@ -152,7 +159,7 @@ for n in range(30):
         meta = "Image: none\nHashtags: none"
         label = "Engage (comments and connections)"
     else:
-        body = f"## Text\n\n{SUMMARY}\n"
+        body = f"## Text\n\n{SUMMARIES[sum_i % len(SUMMARIES)]}\n"; sum_i += 1
         meta = f"Image: optional (weekly log screenshot)\nHashtags: {HASH['summary']}"
         label = "Weekly summary"
     head = (f"# {d.isoformat()} · {d.strftime('%A')} · {label}\n\n"
