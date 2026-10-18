@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-labelledby="t d">
+  <title id="t">Phirawit Jitnarong</title>
+  <desc id="d">Full-Stack and AI engineer, data and quant research, Burapha University</desc>
+  <rect width="1280" height="320" fill="#FFFFFF"/>
+  <rect x="80" y="84" width="6" height="152" fill="#2563EB"/>
+  <text x="112" y="140" font-family="Inter,'IBM Plex Sans','Noto Sans Thai',Segoe UI,Helvetica,Arial,sans-serif" font-size="64" font-weight="700" fill="#0B1220">Phirawit Jitnarong</text>
+  <text x="112" y="190" font-family="Inter,'IBM Plex Sans','Noto Sans Thai',Segoe UI,Helvetica,Arial,sans-serif" font-size="30" fill="#0B1220">Full-Stack &amp; AI Engineer · Data / Quant Research</text>
+  <text x="112" y="232" font-family="'JetBrains Mono',Consolas,Menlo,monospace" font-size="22" fill="#64748B">Burapha University · Thailand · open to internships</text>
+</svg>
