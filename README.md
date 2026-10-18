@@ -4,7 +4,7 @@
 
 First-year student, Burapha University, Thailand. Looking for an internship in 2027.
 
-[LinkedIn](https://www.linkedin.com/in/%E0%B8%9E%E0%B8%B5%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%8A%E0%B8%8D%E0%B9%8C-%E0%B8%88%E0%B8%B4%E0%B8%95%E0%B8%93%E0%B8%A3%E0%B8%87%E0%B8%84%E0%B9%8C-0000393a4/) · [nxme176@gmail.com](mailto:nxme176@gmail.com) · [Research on Zenodo](https://doi.org/10.5281/zenodo.23442600) · [ภาษาไทย](README.th.md)
+[LinkedIn](https://www.linkedin.com/in/phirawit-jitnarong/) · [nxme176@gmail.com](mailto:nxme176@gmail.com) · [Research on Zenodo](https://doi.org/10.5281/zenodo.23442600) · [ภาษาไทย](README.th.md)
 
 I build data-heavy software and reproducible research. Every row below links to its evidence, and where something is a prototype or runs on mock data, it says so.
 
