@@ -4,7 +4,7 @@ Status values: draft → ready → posted.
 
 | Date | Day | Type | Image | Status |
 |---|---|---|---|---|
-| 2026-10-19 | Mon | Introduction: what I built this year | Fig. 1 (assets/log-light.svg) | draft |
+| 2026-10-19 | Mon | Introduction: what I built this year | Fig. 1 (assets/log-light.svg) | posted 18 Oct 2026, urn:li:share:7517647345912610816 |
 | 2026-10-20 | Tue | Short note | optional (text card) | draft |
 | 2026-10-21 | Wed | Engage (comments and connections) | none | draft |
 | 2026-10-22 | Thu | CPIV deep-dive | Screenshot of the CI run and the SHA-256 manifest file in Quant-paper (capture from GitHub) | draft |

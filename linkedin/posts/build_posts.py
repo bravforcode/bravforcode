@@ -6,6 +6,7 @@ import datetime as dt, pathlib
 
 HERE = pathlib.Path(__file__).resolve().parent
 START = dt.date(2026, 10, 19)
+POSTED = {"2026-10-19": "posted 18 Oct 2026, urn:li:share:7517647345912610816"}
 HASH = {"full": "#SoftwareEngineering #DataScience #ReproducibleResearch", "short": "#ReproducibleResearch #QuantitativeFinance", "engage": "", "summary": "#Internship #BuildInPublic"}
 
 FULL = [
@@ -155,10 +156,10 @@ for n in range(30):
         meta = f"Image: optional (weekly log screenshot)\nHashtags: {HASH['summary']}"
         label = "Weekly summary"
     head = (f"# {d.isoformat()} · {d.strftime('%A')} · {label}\n\n"
-            f"Post time: 08:00–10:00 Thailand time (suggested)\n{meta}\nStatus: draft\n\n")
+            f"Post time: 08:00–10:00 Thailand time (suggested)\n{meta}\nStatus: {POSTED.get(d.isoformat(), 'draft')}\n\n")
     check = "## Evidence check\n\nEvery number above must be a file or link in the repositories named in the post.\n"
     fn.write_text(head + body + check, encoding="utf-8")
-    rows.append(f"| {d.isoformat()} | {d.strftime('%a')} | {label} | {meta.splitlines()[0].removeprefix('Image: ')} | draft |")
+    rows.append(f"| {d.isoformat()} | {d.strftime('%a')} | {label} | {meta.splitlines()[0].removeprefix('Image: ')} | {POSTED.get(d.isoformat(), 'draft')} |")
 
 (HERE / "CALENDAR.md").write_text(
     "# 30-day LinkedIn calendar, 19 Oct to 17 Nov 2026\n\n"
