@@ -1,93 +1,76 @@
-<div align="center">
+# Phirawit Jitnarong
 
-<img src="assets/hero.svg" alt="Phirawit Jitnarong — Full-Stack & AI Engineer, Data / Quant Research" width="100%">
+**Full-Stack & AI engineer · Data / Quant research** · พีรวิชญ์ จิตณรงค์
 
-<br>
+First-year student, Burapha University, Thailand. Looking for an internship in 2027.
 
-<a href="https://www.linkedin.com/in/%E0%B8%9E%E0%B8%B5%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%8A%E0%B8%8D%E0%B9%8C-%E0%B8%88%E0%B8%B4%E0%B8%95%E0%B8%93%E0%B8%A3%E0%B8%87%E0%B8%84%E0%B9%8C-0000393a4/"><img src="assets/btn-linkedin.svg" alt="LinkedIn" height="46"></a>
-<a href="mailto:nxme176@gmail.com"><img src="assets/btn-email.svg" alt="Email me" height="46"></a>
-<a href="https://doi.org/10.5281/zenodo.23442600"><img src="assets/btn-doi.svg" alt="Research on Zenodo" height="46"></a>
-<a href="README.th.md"><img src="assets/btn-th.svg" alt="ภาษาไทย" height="46"></a>
+[LinkedIn](https://www.linkedin.com/in/%E0%B8%9E%E0%B8%B5%E0%B8%A3%E0%B8%A7%E0%B8%B4%E0%B8%8A%E0%B8%8D%E0%B9%8C-%E0%B8%88%E0%B8%B4%E0%B8%95%E0%B8%93%E0%B8%A3%E0%B8%87%E0%B8%84%E0%B9%8C-0000393a4/) · [nxme176@gmail.com](mailto:nxme176@gmail.com) · [Research on Zenodo](https://doi.org/10.5281/zenodo.23442600) · [ภาษาไทย](README.th.md)
 
-<br><br>
-
-<img src="assets/stats.svg" alt="25 public repositories · 3 NECTEC AI challenges · 1 DOI-archived paper · 145 tests in JobShield AI" width="100%">
-
-</div>
-
-<br>
-
-First-year student at **Burapha University**. I build data-heavy software and reproducible research: multi-agent systems, compliance-aware web apps, and pre-registered quantitative studies. I write down what a project does *not* show, and I link evidence for every claim on this page.
-
-<br>
-
-<img src="assets/h-work.svg" alt="Selected work" width="100%">
-
-<div align="center">
-
-<a href="https://github.com/bravforcode/Quant-paper"><img src="assets/card-research.svg" alt="CPIV methods note" width="49%"></a>
-<a href="https://github.com/bravforcode/gmx-g5-prospective-2026"><img src="assets/card-gmx.svg" alt="GMX G5 prospective record" width="49%"></a>
-<a href="https://github.com/bravforcode/graxia-os"><img src="assets/card-graxia.svg" alt="Graxia OS" width="49%"></a>
-<a href="https://github.com/bravforcode/adminmate-ai"><img src="assets/card-adminmate.svg" alt="AdminMate AI" width="49%"></a>
-<a href="https://github.com/bravforcode/enterprise-agent-os"><img src="assets/card-agentos.svg" alt="Enterprise Agent OS" width="49%"></a>
-<a href="https://jobsume.vercel.app"><img src="assets/card-jobshield.svg" alt="JobShield AI — live demo" width="49%"></a>
-
-</div>
-
-<br>
-
-<img src="assets/h-skills.svg" alt="Skills" width="100%">
-
-<img src="assets/skills.svg" alt="Python, TypeScript, SQL · FastAPI, Celery, Supabase, PostgreSQL, Redis · React, Next.js, Tailwind · RAG, multi-agent, MCP, Qdrant, statistics · Docker, GitHub Actions" width="100%">
-
-<br>
-
-<img src="assets/h-activity.svg" alt="Activity" width="100%">
+I build data-heavy software and reproducible research. Every row below links to its evidence, and where something is a prototype or runs on mock data, it says so.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="profile-3d-contrib/profile-night-rainbow.svg">
-  <img alt="3D contribution graph" src="profile-3d-contrib/profile-green.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/log-dark.svg">
+  <img alt="Work log from July 2025 to October 2026. Competitions: THNIC Academy, Cyber Top Talent, three AI Thailand challenges, Mahidol x Harvard, EEC-SDG pitching. Research: GMX G5 protocol frozen 26 September 2026, CPIV v28 archived 17 October 2026." src="assets/log-light.svg" width="880">
+</picture>
+
+## Research
+
+| Date | Entry | Evidence |
+|---|---|---|
+| 2026‑10‑17 | **CPIV methods note.** Call–put implied-volatility spreads: exact Black–Scholes–Merton inversion, and how reliable the spread is under synthetic quote noise. Synthetic data only; no alpha claim; no independent replication yet. | [DOI 10.5281/zenodo.23442601](https://doi.org/10.5281/zenodo.23442601) · [code and tests](https://github.com/bravforcode/Quant-paper) |
+| 2026‑09‑26 | **GMX G5 prospective record.** Protocol frozen before the baseline (SHA-256 `efa241ab…`), then four fixed-time snapshots a day, saved as aggregate receipts. Collection ends 11 Oct 2026. | [repository](https://github.com/bravforcode/gmx-g5-prospective-2026) · [frozen protocol](https://gist.github.com/bravforcode/d139701fb92b4dad22e89756e9e14fa8) |
+
+## Software
+
+| Project | What it does | Built with | Evidence |
+|---|---|---|---|
+| **Graxia OS** | Personal AI chief of staff. Finds leads, scores fit and risk, drafts outreach, and waits for human approval before anything is sent. | FastAPI, Celery, Redis, PostgreSQL, React | [code](https://github.com/bravforcode/graxia-os) · Docker Compose quickstart · backend tests and Playwright e2e |
+| **AdminMate AI** | HR platform for SMEs, from recruitment to payroll with Thai tax rules, with row-level security in the database. | React 19, Supabase, Gemini | [code](https://github.com/bravforcode/adminmate-ai) · pgTAP suite in `supabase/` |
+| **JobShield AI** | Career-path recommender on a skill graph, with a wage-gap radar. Runs on 153 hand-written job postings, not real labour-market data. | Next.js, Python | [live demo](https://jobsume.vercel.app) · [code](https://github.com/bravforcode/jobshield-ai) · 145 tests |
+| **Enterprise Agent OS** | MCP server with 15 sub-agents and seven orchestration patterns. Reference implementation; archived. | Python, FastAPI, Qdrant, PostgreSQL | [code](https://github.com/bravforcode/enterprise-agent-os) |
+
+## Competitions and courses
+
+| Date | Event | Result | Proof |
+|---|---|---|---|
+| 2026‑08 | EEC-SDG Hackathon, Burapha University | Shortlisted for final pitching | [shortlist](certificates/eec-sdg-shortlisted-2026-08.pdf) |
+| 2026‑07 | AI Thailand Benchmark (NECTEC): LLM Trustworthiness | Qualified | [confirmation](certificates/ai-thailand-llm-trustworthiness-2026-07.pdf) |
+| 2026‑05 | AI Thailand Benchmark: Meeting Minutes Summarization | Qualified | [confirmation](certificates/ai-thailand-meeting-minutes-2026-05.pdf) |
+| 2026‑04 | Mahidol × Harvard Health Systems Hackathon | Selected participant | [schedule](certificates/onsite-schedule-2026-03-17.pdf) |
+| 2026‑03 | AI Thailand Benchmark: LOTUSDIS distant-meeting transcription | Qualified | [confirmation](certificates/ai-thailand-lotusdis-2026-03.pdf) |
+| 2025‑08 | Thailand Cyber Top Talent (NCSA) | Certificate of appreciation | [certificate](certificates/thailand-cyber-talent-2025.jpg) |
+| 2025‑07 | THNIC Academy: Introduction to Programming | Completed | [certificate](certificates/thnic-intro-programming-2025.jpg) |
+
+## Tools
+
+- **Languages:** Python, TypeScript, SQL
+- **Backend:** FastAPI, Celery, Redis, PostgreSQL, Supabase
+- **Frontend:** React, Next.js, Tailwind CSS
+- **Data and AI:** retrieval-augmented generation, multi-agent systems and MCP, Qdrant, statistics
+- **Infrastructure:** Docker, GitHub Actions
+
+## Contribution record
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="profile-3d-contrib/profile-night-green.svg">
+  <img alt="3D contribution graph for the last year" src="profile-3d-contrib/profile-green.svg" width="100%">
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bravforcode/bravforcode/output/github-contribution-grid-snake-dark.svg">
-  <img alt="Contribution snake" src="https://raw.githubusercontent.com/bravforcode/bravforcode/output/github-contribution-grid-snake.svg" width="100%">
+  <img alt="Contribution calendar" src="https://raw.githubusercontent.com/bravforcode/bravforcode/output/github-contribution-grid-snake.svg" width="100%">
 </picture>
 
-<br>
-
-<img src="assets/h-recognition.svg" alt="Recognition" width="100%">
-
-| Year | Item | Result | Proof |
-|---|---|---|---|
-| 2026 | AI Thailand Benchmark (NECTEC): LOTUSDIS, Meeting Minutes, LLM Trustworthiness | Qualified for 3 challenges | [LOTUSDIS](certificates/ai-thailand-lotusdis-2026-03.pdf) · [Meeting Minutes](certificates/ai-thailand-meeting-minutes-2026-05.pdf) · [LLM Trustworthiness](certificates/ai-thailand-llm-trustworthiness-2026-07.pdf) |
-| 2026 | EEC-SDG Hackathon, Burapha University | Shortlisted for final pitching | [Shortlist](certificates/eec-sdg-shortlisted-2026-08.pdf) |
-| 2026 | Mahidol × Harvard Health Systems Hackathon | Selected participant | [Schedule](certificates/onsite-schedule-2026-03-17.pdf) |
-| 2025 | Thailand Cyber Top Talent (NCSA) | Certificate of appreciation | [Certificate](certificates/thailand-cyber-talent-2025.jpg) |
-| 2025 | THNIC Academy: Introduction to Programming | Completed | [Certificate](certificates/thnic-intro-programming-2025.jpg) |
-
 <details>
-<summary><b>Certificate gallery</b></summary>
+<summary>Certificate images</summary>
 
 <br>
 
 | | | |
 |---|---|---|
-| [<img src="certificates/thailand-cyber-talent-2025.jpg" width="260">](certificates/thailand-cyber-talent-2025.jpg) | [<img src="certificates/thnic-intro-programming-2025.jpg" width="260">](certificates/thnic-intro-programming-2025.jpg) | [<img src="certificates/nepa-warmup-2025.jpg" width="260">](certificates/nepa-warmup-2025.jpg) |
-| [<img src="certificates/nuutor-cup-hamster-hub-2nd-2025.jpg" width="260">](certificates/nuutor-cup-hamster-hub-2nd-2025.jpg) | [<img src="certificates/pre-computer-engineering-basic-hardware.jpg" width="260">](certificates/pre-computer-engineering-basic-hardware.jpg) | |
+| [<img src="certificates/thailand-cyber-talent-2025.jpg" width="260" alt="Thailand Cyber Top Talent certificate">](certificates/thailand-cyber-talent-2025.jpg) | [<img src="certificates/thnic-intro-programming-2025.jpg" width="260" alt="THNIC certificate">](certificates/thnic-intro-programming-2025.jpg) | [<img src="certificates/nepa-warmup-2025.jpg" width="260" alt="NEPA warm-up certificate">](certificates/nepa-warmup-2025.jpg) |
+| [<img src="certificates/nuutor-cup-hamster-hub-2nd-2025.jpg" width="260" alt="NuuTor Cup certificate">](certificates/nuutor-cup-hamster-hub-2nd-2025.jpg) | [<img src="certificates/pre-computer-engineering-basic-hardware.jpg" width="260" alt="Basic hardware course certificate">](certificates/pre-computer-engineering-basic-hardware.jpg) | |
 
 </details>
 
-<br>
-
-<img src="assets/h-now.svg" alt="Now" width="100%">
-
-- Running the **GMX G5 prospective collection** (closes 11 Oct 2026).
-- Revising the **CPIV methods note** (latest archived release: v28).
-- Looking for an **internship** where I can work on data systems, ML or quantitative research.
-
-<br>
-
-<img src="assets/footer.svg" alt="Thanks for stopping by" width="100%">
-
-<sub>AI-assisted workflow: I use Claude Code for drafting and tests. Design decisions and verification are mine; see the commit trailers. Assets on this page are generated by <a href="scripts/build_assets.py"><code>scripts/build_assets.py</code></a>.</sub>
+<sub>I use Claude Code for drafting and tests; design decisions and verification are mine, and the commit trailers show where it was used. Fig. 1 is generated by <a href="scripts/build_figure.py"><code>scripts/build_figure.py</code></a>.</sub>
