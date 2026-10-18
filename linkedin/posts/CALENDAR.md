@@ -1,6 +1,6 @@
 # 30-day LinkedIn calendar, 19 Oct to 17 Nov 2026
 
-Status values: draft → user fills [FILL] → ready → posted.
+Status values: draft → ready → posted.
 
 | Date | Day | Type | Image | Status |
 |---|---|---|---|---|

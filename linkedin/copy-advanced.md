@@ -33,7 +33,6 @@ Media: https://doi.org/10.5281/zenodo.23442601 · https://github.com/bravforcode
 Built and delivered web applications for small clients through the Fastwork marketplace.
 • Owned the full cycle alone: requirements, architecture, development, deployment and maintenance.
 • Built dashboards, websites and automation scripts with React, Next.js, TypeScript and Python; added AI features (text generation, document parsing) where a brief needed them.
-• [FILL if true and linkable: "N completed orders on Fastwork" or one client-approved case study.]
 Skills: React.js · Next.js · TypeScript · Python · SQL
 
 ### Participant · NECTEC, AI Thailand Benchmark Programs · Mar 2026 – Jul 2026

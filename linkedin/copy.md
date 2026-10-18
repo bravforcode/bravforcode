@@ -2,7 +2,6 @@
 
 URL: https://www.linkedin.com/in/phirawit-jitnarong/
 Cover image: `assets/linkedin-banner.png` (1584 × 396). Left 380 px is kept clear for the profile photo.
-Fields marked **[FILL]** need facts only you have. Do not invent them.
 
 ## Headline (max 220 chars; first ~60 show in search)
 
@@ -31,7 +30,7 @@ Email: nxme176@gmail.com
 
 ## Education
 
-Burapha University — **[FILL: faculty / degree / start year]** — first year. Activities: EEC-SDG Hackathon (shortlisted for final pitching, Aug 2026).
+Burapha University — first year. Activities: EEC-SDG Hackathon (shortlisted for final pitching, Aug 2026).
 
 ## Projects (use the Projects section, not Experience)
 

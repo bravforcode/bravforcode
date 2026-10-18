@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate the 30-day LinkedIn calendar (19 Oct to 17 Nov 2026).
 Run: python linkedin/posts/build_posts.py. Every number in the text must match a file in the linked repositories.
-[FILL] marks facts only the author can supply. Do not publish a post with an open [FILL]."""
+Comment templates use [your ...] slots that you write yourself at the time of commenting."""
 import datetime as dt, pathlib
 
 HERE = pathlib.Path(__file__).resolve().parent
@@ -13,7 +13,7 @@ FULL = [
   """I am a first-year student at Burapha University. This year I built three things I can point to:
 • CPIV methods note: exact Black–Scholes–Merton inversion for call–put pairs, archived with a DOI (10.5281/zenodo.23442601).
 • GMX G5 prospective record: protocol hashed before the baseline, then collected on a fixed UTC schedule.
-• JobShield AI: a career-path recommender with a live demo and 145 tests. It runs on mock data, and the site says so.
+• JobShield AI: a career-path recommender with a live demo and 145 tests. Its input is 153 hand-written sample postings, not live labour-market data.
 I am looking for a 2027 internship in software, data, machine learning or quantitative research. Every claim links to its repository.
 
 ผมเป็นนักศึกษาปี 1 มหาวิทยาลัยบูรพา กำลังหาฝึกงานปี 2027 ผลงานทุกชิ้นมีลิงก์หลักฐาน""",
@@ -47,7 +47,7 @@ If wage is part of the edge cost, a high-paying job can make a path look cheaper
 
 So JobShield splits the work. Layer 1 finds paths with a non-negative cost (skill distance plus risk). Layer 2 ranks destinations by wage gain minus path cost.
 
-The input is 153 hand-written job postings, so read the output as a demonstration of the method, not as labour-market fact. Live demo and 145 tests: jobsume.vercel.app""",
+The input is 153 hand-written sample postings, so read the output as a demonstration of the method, not as labour-market fact. Live demo and 145 tests: jobsume.vercel.app""",
   "jobsume.vercel.app · github.com/bravforcode/jobshield-ai"),
  ("Human approval before anything is sent", "Celery queue diagram (draw from graxia-os README architecture)",
   """Agent tools should not send anything on their own.
@@ -63,7 +63,7 @@ Stack: FastAPI, async SQLAlchemy, PostgreSQL, Redis and React. Docker Compose qu
 
 The CPIV review package has SHA-256 manifests: 268 entries for the full package and 171 for the CPIV-only subset.
 
-My first verifier was a PowerShell script. Linux and macOS users would have to install a shell first, which is a barrier to reproducing the result. [FILL: the portable verifier you added, and the command to run it, if it is done]
+The verifier I have is a PowerShell script (scripts/verify_sha256_manifest.ps1). Linux and macOS users would need PowerShell installed first, so the check is not portable yet. A portable version is the next step.
 
 Lesson: write the verification step in a language your readers already have, then test it on a clean machine.""",
   "github.com/bravforcode/Quant-paper/tree/master/reports"),
@@ -72,9 +72,9 @@ Lesson: write the verification step in a language your readers already have, the
 
 In AdminMate AI I put row-level security in the database, not only in the interface. A hidden button is not a permission.
 
-The rules are tested with pgTAP. The README reports 1,777 tests: check the current count in the repository before you quote it.
+The database rules are tested with pgTAP files in supabase/tests.
 
-Thai payroll rules are checked against golden files with expected outputs, so a change to a tax calculation shows up as a test diff.
+Thai tax calculations are checked with a golden-file test, so a change to a tax result shows up as a test diff.
 
 Stack: React 19, TypeScript and Supabase. github.com/bravforcode/adminmate-ai""",
   "github.com/bravforcode/adminmate-ai"),
@@ -84,16 +84,10 @@ Stack: React 19, TypeScript and Supabase. github.com/bravforcode/adminmate-ai"""
 • Meeting Minutes Summarization (May)
 • LLM Trustworthiness (July)
 
-[FILL: one concrete thing you learned in one challenge, for example what distant microphones did to transcription, or an LLM answer that was wrong and how you checked it.]
-
 Certificates are in the profile repository: github.com/bravforcode/bravforcode""",
   "github.com/bravforcode/bravforcode/tree/main/certificates"),
  ("Mahidol × Harvard Health Systems Hackathon", "Schedule document (blur names first)",
-  """In April 2026 I was selected as a participant in the Mahidol × Harvard Health Systems Innovation Lab Hackathon, one of 196 teams and individuals nationwide.
-
-[FILL: what your team built, the problem it addressed, and what you would change now.]
-
-Thank you to the organisers and mentors. I learned more from the feedback than from the prize list.""",
+  """In April 2026 I was selected as a participant in the Mahidol × Harvard Health Systems Innovation Lab Hackathon. The onsite schedule is in the certificates folder of the profile repository.""",
   "github.com/bravforcode/bravforcode/tree/main/certificates"),
 ]
 
@@ -110,9 +104,9 @@ SHORT = [
 ]
 
 ENGAGE_TEMPLATES = [
- ("Add a concrete experience", "Good point. I ran into something similar when [FILL: one concrete situation]. What did you do about [specific detail from their post]?"),
- ("Ask a specific question", "How did you handle [specific detail]? I am working on [FILL: related thing] and I am not sure whether [FILL: the open question]."),
- ("Name a limit politely", "Useful. One limit I would add, based on my own work: [FILL: the limit, stated plainly]."),
+ ("Add a concrete experience", "Good point. I ran into something similar when [your own situation]. What did you do about [specific detail from their post]?"),
+ ("Ask a specific question", "How did you handle [specific detail]? I am working on [your related project] and I am not sure whether [your open question]."),
+ ("Name a limit politely", "Useful. One limit I would add, based on my own work: [your limit, stated plainly]."),
 ]
 CONNECT = [
  "AI Thailand challenge participants (2026 cohort)",
@@ -123,11 +117,11 @@ CONNECT = [
 ]
 CONNECT_NOTE = "Hi [name], I'm a first-year at Burapha working on reproducible data and quant research. I read your [specific post or project]. Would be glad to connect."
 
-SUMMARY = """This week: [FILL: three things I did].
-One thing I learned: [FILL: a real lesson, not a slogan].
-Next week: [FILL: one thing I plan to build or check].
+SUMMARY = """I am preparing for 2027 internship interviews in software, data and quantitative research.
 
-Question for readers: [FILL: a question you genuinely want answered, for example what a quant internship asks for in a first interview]."""
+Question for readers: what did a first interview for a quant or data internship actually ask you? I want to know which skills to show with evidence before I apply.
+
+Projects with links: github.com/bravforcode"""
 
 def day_type(d):
     return {0: "full", 1: "short", 2: "engage", 3: "full", 4: "short", 5: "engage", 6: "summary"}[d.weekday()]
@@ -162,14 +156,13 @@ for n in range(30):
         label = "Weekly summary"
     head = (f"# {d.isoformat()} · {d.strftime('%A')} · {label}\n\n"
             f"Post time: 08:00–10:00 Thailand time (suggested)\n{meta}\nStatus: draft\n\n")
-    check = ("## Evidence check\n\nEvery number above must be a file or link in the repositories named in the post. "
-             "Remove any [FILL] before publishing.\n")
+    check = "## Evidence check\n\nEvery number above must be a file or link in the repositories named in the post.\n"
     fn.write_text(head + body + check, encoding="utf-8")
     rows.append(f"| {d.isoformat()} | {d.strftime('%a')} | {label} | {meta.splitlines()[0].removeprefix('Image: ')} | draft |")
 
 (HERE / "CALENDAR.md").write_text(
     "# 30-day LinkedIn calendar, 19 Oct to 17 Nov 2026\n\n"
-    "Status values: draft → user fills [FILL] → ready → posted.\n\n"
+    "Status values: draft → ready → posted.\n\n"
     "| Date | Day | Type | Image | Status |\n|---|---|---|---|---|\n" + "\n".join(rows) + "\n",
     encoding="utf-8")
 print("wrote", len(list(HERE.glob("2026-*.md"))), "post files")
