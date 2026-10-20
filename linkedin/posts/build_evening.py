@@ -164,14 +164,14 @@ for day, fmt, topic, text in EVENING:
     body = (f"# {day} · {d.strftime('%A')} · Evening: {topic}\n\n"
             f"Format: {fmt}\n"
             "Post time: 19:30 Thailand time (suggested)\n"
-            "Status: awaiting approval (not scheduled)\n\n"
+            "Status: approved, scheduled for 19:30 Thailand time\n\n"
             f"## Text\n\n{text}\n\n"
             "## Evidence check\n\nEach fact in the post is in the named repository.\n")
     (HERE / f"{day}.md").write_text(body, encoding="utf-8")
-    rows.append(f"| {day} | {d.strftime('%a')} | {fmt} | {topic} | awaiting approval |")
+    rows.append(f"| {day} | {d.strftime('%a')} | {fmt} | {topic} | approved, scheduled |")
 (HERE / "CALENDAR.md").write_text(
     "# Evening drafts, 20 Oct to 17 Nov 2026 (second slot, English)\n\n"
-    "Status: awaiting approval. Nothing here is scheduled.\n\n"
+    "Status: approved and scheduled (see the scheduled-task list for trigger IDs).\n\n"
     "| Date | Day | Format | Topic | Status |\n|---|---|---|---|---|\n" + "\n".join(rows) + "\n",
     encoding="utf-8")
 print("wrote", len(EVENING), "evening drafts")
