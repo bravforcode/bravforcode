@@ -34,19 +34,17 @@ github.com/bravforcode/Quant-paper"""),
  ("2026-10-26", "Priorities per queue",
   """Graxia OS runs Celery on four queues: critical, default, background and dead-letter.
 
-The first three have priority settings (10, 5 and 1). The dead-letter queue has none, because it only receives tasks that failed and needs to be read, not processed first.
+The first three have priority settings (10, 5 and 1). The dead-letter queue has none.
 
 github.com/bravforcode/graxia-os (backend/app/tasks/queues.py)"""),
  ("2026-10-27", "Failed tasks have a place to go",
   """A failed Celery task in Graxia OS ends up in a dead-letter queue, not in the void.
 
-An admin endpoint lists those messages. Replaying one is a separate POST request, so a human decides when a failed task runs again.
+An admin endpoint lists those messages. Replaying one is a separate POST request, so a retry is an explicit action.
 
 github.com/bravforcode/graxia-os (backend/app/api/admin.py)"""),
  ("2026-10-29", "Four services in one compose file",
   """The root docker-compose.yml of Graxia OS defines four services: Redis, the backend, a Celery worker and Celery beat.
-
-Keeping the scheduler (beat) as its own service means a stuck worker does not stop the schedule from being read.
 
 github.com/bravforcode/graxia-os"""),
  ("2026-10-30", "Counting policies honestly",
@@ -63,8 +61,6 @@ When a rate changes, the test diff shows the exact result that moved.
 github.com/bravforcode/adminmate-ai (tests/unit/payroll)"""),
  ("2026-11-02", "Recurring jobs live in code",
   """Graxia OS defines its recurring Celery jobs in code, in a beat schedule, not in a server's crontab.
-
-The schedule is reviewed in a pull request like any other change, and it runs in the same environment as the workers.
 
 github.com/bravforcode/graxia-os (backend/app/tasks/celery_app.py)"""),
  ("2026-11-03", "A manifest is only as good as its inputs",
@@ -88,13 +84,13 @@ github.com/bravforcode/Quant-paper (.github/workflows/cpiv-repro.yml)"""),
  ("2026-11-08", "Every push runs the database checks",
   """In AdminMate AI, the database test workflow runs on every push and every pull request. A separate security grep workflow also runs on both.
 
-A failing database test blocks the merge, so a broken policy is found before it reaches the main branch.
+A failing database test shows up on the pull request, so a broken policy is visible before the merge decision.
 
 github.com/bravforcode/adminmate-ai (.github/workflows/db-test.yml)"""),
  ("2026-11-09", "Quote CI, not memory",
   """Before I quote a test count in a README or a post, I check it against the latest CI run.
 
-A number I remember is not evidence. A number from the run is.
+A number from memory is not evidence. A number from the run is.
 
 github.com/bravforcode/adminmate-ai"""),
  ("2026-11-10", "Name a policy after the rule",
@@ -106,8 +102,6 @@ github.com/bravforcode/adminmate-ai"""),
  ("2026-11-12", "Qualifying is not the result",
   """Qualifying for an AI Thailand challenge is a line on a certificate. What a recruiter can check is what the challenge produced: the code, the write-up, and what failed.
 
-I am working on putting that evidence next to each challenge in my profile.
-
 github.com/bravforcode"""),
  ("2026-11-13", "A method can be right without a trading rule",
   """A synthetic result can support a measurement method. It cannot support a trading rule.
@@ -118,7 +112,7 @@ github.com/bravforcode/Quant-paper"""),
  ("2026-11-15", "Write down what counts as failure",
   """A pre-registered protocol names the outcome that would count as a failure, before the data arrives.
 
-Most studies skip that line. Without it, any result can be told as a success.
+That line is often skipped. Without it, any result can be told as a success.
 
 github.com/bravforcode/gmx-g5-prospective-2026"""),
  ("2026-11-16", "Thai reflection: โปรโตคอลก่อนข้อมูล",
@@ -127,8 +121,6 @@ github.com/bravforcode/gmx-g5-prospective-2026"""),
 github.com/bravforcode/gmx-g5-prospective-2026"""),
  ("2026-11-17", "Limitations before results",
   """Write the limitations section before the results section. If you cannot say what a method cannot show, the results are not ready to share.
-
-This is the rule I apply to each repository I publish.
 
 github.com/bravforcode"""),
 ]
