@@ -17,6 +17,7 @@ I build data-heavy software and reproducible research. Every row below links to 
 
 | Date | Entry | Evidence |
 |---|---|---|
+| 2026‑10‑15 | **AI Audit Lab: a Phase 1 design-and-development framework and evaluation protocol** for auditing AI-assisted machine-learning workflows. Published in *JIL* (Mahidol University). Design only: not yet tested with learners, and no claim of teaching effectiveness. | JIL article (search "AI Audit Lab") |
 | 2026‑10‑17 | **CPIV methods note.** Call–put implied-volatility spreads: exact Black–Scholes–Merton inversion, and how reliable the spread is under synthetic quote noise. Synthetic data only; no alpha claim; no independent replication yet. | [DOI 10.5281/zenodo.23442601](https://doi.org/10.5281/zenodo.23442601) · [code and tests](https://github.com/bravforcode/Quant-paper) |
 | 2026‑09‑26 | **GMX G5 prospective record.** Protocol frozen before the baseline (SHA-256 `efa241ab…`), then four fixed-time snapshots a day, saved as aggregate receipts. Collection ends 11 Oct 2026. | [repository](https://github.com/bravforcode/gmx-g5-prospective-2026) · [frozen protocol](https://gist.github.com/bravforcode/d139701fb92b4dad22e89756e9e14fa8) |
 

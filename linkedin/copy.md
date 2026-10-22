@@ -24,9 +24,16 @@ Email: nxme176@gmail.com
 ## Featured (add in this order)
 
 1. **CPIV methods note** — link: https://doi.org/10.5281/zenodo.23442601 — "Call–put implied-volatility spreads. Exact BSM inversion and robustness under synthetic noise. DOI-archived."
-2. **GMX G5 prospective record** — link: https://github.com/bravforcode/gmx-g5-prospective-2026 — "Protocol frozen before the baseline, fixed-time aggregate receipts."
-3. **JobShield AI (live demo)** — link: https://jobsume.vercel.app — "Explainable career-path recommender on a skill graph. Mock data, 145 tests."
-4. **Graxia OS** — link: https://github.com/bravforcode/graxia-os — "Personal AI chief of staff with a human approval step. FastAPI, Celery, React."
+2. **AI Audit Lab (JIL, published 15 Oct 2026)** — link: https://il.mahidol.ac.th/jil_systems/index.php/01/article/view/51/36 — "Phase 1 design of a framework for auditing AI-generated machine-learning notebooks. Not yet tested with learners."
+3. **GMX G5 prospective record** — link: https://github.com/bravforcode/gmx-g5-prospective-2026 — "Protocol frozen before the baseline, fixed-time aggregate receipts."
+4. **JobShield AI (live demo)** — link: https://jobsume.vercel.app — "Explainable career-path recommender on a skill graph. Mock data, 145 tests."
+5. **Graxia OS** — link: https://github.com/bravforcode/graxia-os — "Personal AI chief of staff with a human approval step. FastAPI, Celery, React."
+
+## Publications
+
+**AI Audit Lab: A Phase 1 Design-and-Development Framework and Evaluation Protocol for Auditing AI-Assisted Machine-Learning Workflows** · JIL (Mahidol University) · 15 Oct 2026
+Phase 1 only: design and development, with no learner testing and no claim of teaching effectiveness.
+Link: https://il.mahidol.ac.th/jil_systems/index.php/01/article/view/51/36
 
 ## Education
 
