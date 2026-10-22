@@ -14,7 +14,7 @@ Fact you should know: it is a Phase 1 paper. It describes the design and the dev
 
 Search "AI Audit Lab" in JIL (Mahidol University) to read it."""),
  ("2026-10-25", "Insight", "The skill gap",
-  """Generative AI can write a working notebook in one prompt. Judging whether its conclusions hold is a separate skill, and most courses teach only the first one.
+  """Generative AI can write a working notebook in one prompt. Judging whether its conclusions hold is a separate skill.
 
 The AI Audit Lab paper treats AI output as a claim to verify, not as an answer to accept."""),
  ("2026-10-26", "Fact with source", "Leakage in published research",
@@ -32,7 +32,7 @@ Leakage means information from outside the training set influences training or e
  ("2026-10-29", "Contrarian take", "Same score, invalid workflow",
   """A workflow can be invalid and still produce the same score.
 
-In the paper's first demonstration, a scaler fitted before the train–test split and a scaler fitted after it gave the same mean AUC to four decimals: 0.7808 on synthetic data.
+In the paper's first demonstration, a scaler fitted on all the data before splitting and a scaler fitted on the training fold only gave the same mean AUC to four decimals: 0.7808 on synthetic data.
 
 A metric that does not move does not prove the pipeline is valid."""),
  ("2026-10-30", "Example with numbers", "A proxy that leaks the label",
@@ -50,7 +50,7 @@ Passing Tier 1 does not mean the whole workflow is valid. It checks only the pro
  ("2026-11-02", "Principle", "Hypothesis before help",
   """A tutor should not explain the specific bug until the learner has committed to a hypothesis.
 
-The AI Audit Lab tutor works this way. Before a hypothesis is submitted, it only asks questions or explains general concepts. The rule is written as a policy layer, not a single prompt, because a prompt alone is easy to bypass."""),
+The AI Audit Lab tutor works this way. Before a hypothesis is submitted, it only asks questions or explains general concepts. The paper says this rule should be enforced by a policy layer, not by a prompt alone."""),
  ("2026-11-03", "Numbered list", "Eight error scenarios",
   """The AI Audit Lab specifies eight error scenarios in three validity categories:
 
@@ -60,7 +60,7 @@ Evaluation: misuse of accuracy on imbalanced labels.
 
 Interpretation: correlation described as causation.
 
-Only four of the eight are implemented in the Phase 1 package. The rest are design-level."""),
+Only two of the eight are implemented in the Phase 1 package: preprocessing leakage and target leakage. The other six are design-level."""),
  ("2026-11-05", "Limits first", "What the paper does not claim",
   """Limits, stated first, as the paper does:
 
@@ -99,7 +99,7 @@ Research on erroneous examples reports transfer benefits for learners with enoug
  ("2026-11-12", "Disclosure", "How AI was used",
   """Disclosure for my paper in JIL: I used AI tools for literature search, programming help and language editing.
 
-I personally ran and checked all code, verified every numerical result, and checked every reference against its original source. The paper says this in its acknowledgements."""),
+I personally ran and checked all code, verified every numerical result, and checked every reference against its original source. The paper states this in its generative-AI disclosure."""),
  ("2026-11-13", "Example", "Association is not a cause",
   """Example of one error the AI Audit Lab targets:
 
