@@ -1,4 +1,5 @@
 import datetime as dt, io, json, tempfile, unittest, urllib.error, pathlib
+import unittest.mock
 import poster
 
 BKK = dt.timezone(dt.timedelta(hours=7))
@@ -61,15 +62,33 @@ class CreatePost(unittest.TestCase):
         self.assertEqual(seen["body"]["lifecycleState"], "PUBLISHED")
         self.assertEqual(seen["body"]["visibility"], "PUBLIC")
 
-    def test_retries_once_on_server_error(self):
+    def test_escapes_little_format_reserved_characters(self):
+        seen = {}
+        def opener(req, timeout):
+            seen["body"] = json.loads(req.data.decode("utf-8"))
+            return FakeResponse(201, {"x-restli-id": "urn:li:share:1"})
+        poster.create_post(r"a (b) \ c_d #e", "tok", "urn:li:person:x", "202610", opener)
+        self.assertEqual(seen["body"]["commentary"], r"a \(b\) \\ c\_d \#e")
+
+    def test_retries_once_on_rate_limit(self):
         calls = []
         def opener(req, timeout):
             calls.append(1)
             if len(calls) == 1:
-                raise urllib.error.HTTPError(req.full_url, 502, "bad gateway", {}, io.BytesIO(b""))
+                raise urllib.error.HTTPError(req.full_url, 429, "too many", {}, io.BytesIO(b""))
             return FakeResponse(201, {"x-restli-id": "urn:li:share:7"})
         urn = poster.create_post_with_retry("hi", "t", "a", "202610", opener, sleep=lambda s: None)
         self.assertEqual((urn, len(calls)), ("urn:li:share:7", 2))
+
+    def test_does_not_retry_when_post_may_exist(self):
+        for exc in (urllib.error.HTTPError("u", 502, "bad gateway", {}, io.BytesIO(b"")), TimeoutError("read")):
+            calls = []
+            def opener(req, timeout):
+                calls.append(1)
+                raise exc
+            with self.assertRaises(type(exc)):
+                poster.create_post_with_retry("hi", "t", "a", "202610", opener, sleep=lambda s: None)
+            self.assertEqual(len(calls), 1)
 
     def test_does_not_retry_client_error(self):
         calls = []
@@ -79,6 +98,29 @@ class CreatePost(unittest.TestCase):
         with self.assertRaises(urllib.error.HTTPError):
             poster.create_post_with_retry("hi", "t", "a", "202610", opener, sleep=lambda s: None)
         self.assertEqual(len(calls), 1)
+
+
+class MainLive(unittest.TestCase):
+    def test_failed_item_records_linkedin_error_body(self):
+        with tempfile.TemporaryDirectory() as d:
+            sched = pathlib.Path(d, "schedule.json")
+            state = pathlib.Path(d, "state.json")
+            sched.write_text(json.dumps([item("a", "2026-11-03T10:00:00+07:00")]), encoding="utf-8")
+            def boom(*a, **k):
+                raise urllib.error.HTTPError("u", 422, "Unprocessable", {}, io.BytesIO(b'{"message":"bad commentary"}'))
+            orig = poster.create_post_with_retry
+            poster.create_post_with_retry = boom
+            env = {"LINKEDIN_ACCESS_TOKEN": "t", "LINKEDIN_AUTHOR_URN": "urn:li:person:x"}
+            try:
+                with unittest.mock.patch.dict("os.environ", env):
+                    code = poster.main(["--schedule", str(sched), "--state", str(state),
+                                        "--now", "2026-11-03T10:30:00+07:00"])
+            finally:
+                poster.create_post_with_retry = orig
+            entry = json.loads(state.read_text(encoding="utf-8"))["a"]
+            self.assertEqual(code, 1)
+            self.assertEqual(entry["status"], "failed")
+            self.assertIn("bad commentary", entry["error"])
 
 
 class MainDryRun(unittest.TestCase):

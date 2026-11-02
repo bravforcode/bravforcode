@@ -5,6 +5,7 @@ Standard library only, so the VPS needs no installs. Run every few minutes from 
 - Items publish only inside a catch-up window after their slot; older items are marked missed, never posted late.
 - State is written before each call ('sending') and after success (urn). A leftover 'sending' entry is
   reported and never retried automatically, because the post may already be live.
+- Commentary is escaped for LinkedIn's "little" text format, so drafts stay plain text.
 - Exit code 1 if any item failed, so the unit shows as failed and an alert can fire.
 
 Environment: LINKEDIN_ACCESS_TOKEN (required unless --dry-run), LINKEDIN_AUTHOR_URN (required unless --dry-run),
@@ -16,6 +17,12 @@ HERE = pathlib.Path(__file__).resolve().parent
 API = "https://api.linkedin.com/rest/posts"
 CATCH_UP = dt.timedelta(hours=6)
 RETRY_DELAY_SECONDS = 10
+# Reserved by LinkedIn's "little" text format; each must be backslash-escaped or the post is cut or rejected.
+LITTLE_RESERVED = set("|{}@[]()<>#\\*_~")
+
+
+def escape_little(text):
+    return "".join("\\" + c if c in LITTLE_RESERVED else c for c in text)
 
 
 def load(path, default):
@@ -47,7 +54,7 @@ def due_items(schedule, state, now):
 def create_post(text, token, author, version, opener=urllib.request.urlopen):
     body = json.dumps({
         "author": author,
-        "commentary": text,
+        "commentary": escape_little(text),
         "visibility": "PUBLIC",
         "distribution": {"feedDistribution": "MAIN_FEED", "targetEntities": [], "thirdPartyDistributionChannels": []},
         "lifecycleState": "PUBLISHED",
@@ -69,13 +76,14 @@ def create_post(text, token, author, version, opener=urllib.request.urlopen):
 
 
 def create_post_with_retry(text, token, author, version, opener=urllib.request.urlopen, sleep=time.sleep):
-    """Retry once on network errors and 5xx/429. Never retry other 4xx: the post was not created."""
+    """Retry once only when the post was certainly not created: 429, or a connection that never got a response.
+    A 5xx or a read timeout may come after LinkedIn created the post, so those fail instead of risking a duplicate."""
     try:
         return create_post(text, token, author, version, opener)
     except urllib.error.HTTPError as err:
-        if err.code < 500 and err.code != 429:
+        if err.code != 429:
             raise
-    except (urllib.error.URLError, TimeoutError):
+    except urllib.error.URLError:
         pass
     sleep(RETRY_DELAY_SECONDS)
     return create_post(text, token, author, version, opener)
@@ -127,9 +135,12 @@ def main(argv=None):
         try:
             urn = create_post_with_retry(item["text"], token, author, version)
         except Exception as exc:  # record and continue with the next item
-            state[item["id"]] = {"status": "failed", "error": str(exc)[:300], "at": now.isoformat()}
+            detail = str(exc)
+            if isinstance(exc, urllib.error.HTTPError):
+                detail += " " + exc.read().decode("utf-8", "replace")
+            state[item["id"]] = {"status": "failed", "error": detail[:500], "at": now.isoformat()}
             save(args.state, state)
-            print(f"FAILED {item['id']}: {exc}", file=sys.stderr)
+            print(f"FAILED {item['id']}: {detail[:500]}", file=sys.stderr)
             failed = True
             continue
         state[item["id"]] = {"status": "posted", "urn": urn, "at": now.isoformat()}
