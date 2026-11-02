@@ -1,0 +1,17 @@
+[Unit]
+Description=Publish due LinkedIn posts (LinkedIn Posts API)
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=linkedin-poster
+Group=linkedin-poster
+EnvironmentFile=/etc/linkedin-poster/env
+WorkingDirectory=/opt/linkedin-poster
+ExecStart=/usr/bin/python3 /opt/linkedin-poster/poster.py --schedule /opt/linkedin-poster/schedule.json --state /var/lib/linkedin-poster/state.json
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/linkedin-poster

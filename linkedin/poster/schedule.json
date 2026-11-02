@@ -1,0 +1,465 @@
+[
+  {
+    "id": "2026-10-19-morning",
+    "at": "2026-10-19T13:00:00+07:00",
+    "kind": "morning",
+    "source": "linkedin/posts/2026-10-19.md",
+    "text": "I am a first-year student at Burapha University. This year I built three things I can point to:\n• CPIV methods note: exact Black–Scholes–Merton inversion for call–put pairs, archived with a DOI (10.5281/zenodo.23442601).\n• GMX G5 prospective record: protocol hashed before the baseline, then collected on a fixed UTC schedule.\n• JobShield AI: a career-path recommender with a live demo and 145 tests. Its input is 153 hand-written sample postings, not live labour-market data.\nI am looking for a 2027 internship in software, data, machine learning or quantitative research. Every claim links to its repository.\n\nผมเป็นนักศึกษาปี 1 มหาวิทยาลัยบูรพา กำลังหาฝึกงานปี 2027 ผลงานทุกชิ้นมีลิงก์หลักฐาน",
+    "urn": "urn:li:share:7517647345912610816"
+  },
+  {
+    "id": "2026-10-20-morning",
+    "at": "2026-10-20T13:00:00+07:00",
+    "kind": "morning",
+    "source": "linkedin/posts/2026-10-20.md",
+    "text": "A DOI does not make research correct. It makes it citable and checkable. The CPIV README says what it does not show: synthetic data, no alpha claim, no independent replication.",
+    "urn": "urn:li:share:7518115955336597504"
+  },
+  {
+    "id": "2026-10-20-evening",
+    "at": "2026-10-20T20:00:00+07:00",
+    "kind": "evening",
+    "source": "linkedin/posts/evening/2026-10-20.md",
+    "text": "Myth: a call–put implied-volatility spread is a trading signal.\n\nFact: it is a measurement, and it only means something when the pair matches on underlying, strike, expiry, exercise style and multiplier. Change one field and the number measures something else.\n\nQuant-paper on GitHub (bravforcode)",
+    "urn": "urn:li:share:7518287617659080706"
+  },
+  {
+    "id": "2026-10-22-morning",
+    "at": "2026-10-22T13:00:00+07:00",
+    "kind": "morning",
+    "source": "linkedin/posts/2026-10-22.md",
+    "text": "Question: how reliable is a call–put implied-volatility spread when quotes are noisy?\n\nMethod: exact BSM inversion for matched pairs, then simulated quote noise to see where the spread stops being informative.\n\nWhat it does not show: no market data, no trading claim, and no independent replication yet. The results come from a synthetic generator, not from market quotes.\n\nWhat makes it checkable: a uv lockfile, CI on Ubuntu and Windows across Python 3.12–3.14, and SHA-256 manifests for the review package (268 entries) and the CPIV-only subset (171 entries).\n\nRead the note and its limitations: github.com/bravforcode/Quant-paper",
+    "urn": "urn:li:share:7518840683907112960"
+  },
+  {
+    "id": "2026-10-22-evening",
+    "at": "2026-10-22T20:00:00+07:00",
+    "kind": "evening",
+    "source": "linkedin/posts/evening/2026-10-22.md",
+    "text": "Before you publish a research repository, check five things:\n\n1. The README states the scope and what it does not cover.\n2. Dependencies are pinned with a lockfile.\n3. CI runs on at least two operating systems.\n4. Released files have hashes, and the hash list is in the repository.\n5. The limitations appear before the results.\n\nQuant-paper on GitHub (bravforcode) is an example of several of these.",
+    "urn": "urn:li:share:7519013943005052928"
+  },
+  {
+    "id": "2026-10-23-jil",
+    "at": "2026-10-23T10:00:00+07:00",
+    "kind": "jil",
+    "source": "linkedin/posts/jil/2026-10-23.md",
+    "text": "New paper, published in JIL on 15 October 2026: AI Audit Lab, a design-and-development framework for auditing AI-assisted machine-learning workflows.\n\nFact you should know: it is a Phase 1 paper. It describes the design and the development. It has not been tested with learners, and it makes no claim of teaching effectiveness.\n\nSearch \"AI Audit Lab\" in JIL (Mahidol University) to read it.",
+    "urn": "urn:li:share:7519231495966785538"
+  },
+  {
+    "id": "2026-10-23-morning",
+    "at": "2026-10-23T13:00:00+07:00",
+    "kind": "morning",
+    "source": "linkedin/posts/2026-10-23.md",
+    "text": "Freeze the protocol before you look at the data. The GMX G5 protocol was hashed on 26 Sep 2026, the day before the baseline. Changing it later would be visible.",
+    "urn": "urn:li:share:7519276801857187840"
+  },
+  {
+    "id": "2026-10-23-evening",
+    "at": "2026-10-23T20:00:00+07:00",
+    "kind": "evening",
+    "source": "linkedin/posts/evening/2026-10-23.md",
+    "text": "Reproducibility starts with a short setup. Many readers stop at the first setup step, so a project that needs more than two commands to run its tests loses people early.\n\nThe CPIV package needs two: uv sync --locked, then pytest.\n\nQuant-paper on GitHub (bravforcode)",
+    "urn": "urn:li:share:7519382986547429376"
+  },
+  {
+    "id": "2026-10-25-jil",
+    "at": "2026-10-25T10:00:00+07:00",
+    "kind": "jil",
+    "source": "linkedin/posts/jil/2026-10-25.md",
+    "text": "Generative AI can write a working notebook in one prompt. Judging whether its conclusions hold is a separate skill.\n\nThe AI Audit Lab paper treats AI output as a claim to verify, not as an answer to accept.",
+    "urn": "urn:li:share:7519956272004329472"
+  },
+  {
+    "id": "2026-10-25-morning",
+    "at": "2026-10-25T13:00:00+07:00",
+    "kind": "morning",
+    "source": "linkedin/posts/2026-10-25.md",
+    "text": "Question for readers: when you review a data or quant project, what do you check first: the code, the data, or the stated limits?\n\nProjects with links: github.com/bravforcode",
+    "missed": true
+  },
+  {
+    "id": "2026-10-25-evening",
+    "at": "2026-10-25T20:00:00+07:00",
+    "kind": "evening",
+    "source": "linkedin/posts/evening/2026-10-25.md",
+    "text": "When you review a quant or data project, what do you check first?\n\nA) The code\nB) The data\nC) The stated limits\n\nI would pick C. A stated limit tells you which claims the code can support. Which would you pick, and why?",
+    "urn": "urn:li:share:7520107360317566976"
+  },
+  {
+    "id": "2026-10-26-jil",
+    "at": "2026-10-26T10:00:00+07:00",
+    "kind": "jil",
+    "source": "linkedin/posts/jil/2026-10-26.md",
+    "text": "Fact you should know: Kapoor and Narayanan (2023) found data leakage in at least 294 published studies written by trained researchers.\n\nLeakage means information from outside the training set influences training or evaluation. In some of those studies, the leak inflated accuracy enough that the claim did not survive correction.",
+    "urn": "urn:li:share:7520318621571715072"
+  },
+  {
+    "id": "2026-10-26-morning",
+    "at": "2026-10-26T13:00:00+07:00",
+    "kind": "morning",
+    "source": "linkedin/posts/2026-10-26.md",
+    "text": "Why does the GMX G5 collector query a specified historical UTC snapshot instead of \"now\"?\n\nScheduled jobs can run late or be skipped. If the script used the runner's clock, a late run would silently record a different moment. The collector always queries the snapshot it was asked for.\n\nThe protocol was hashed on 26 Sep 2026, before the 27 Sep baseline. Protocol SHA-256 efa241ab…\n\nLesson: the time a value refers to should be an input to the code, not the time the code happens to run.",
+    "urn": "urn:li:share:7520363921246011392"
+  },
+  {
+    "id": "2026-10-26-evening",
+    "at": "2026-10-26T20:00:00+07:00",
+    "kind": "evening",
+    "source": "linkedin/posts/evening/2026-10-26.md",
+    "text": "Queue priority, in one line: a number that tells the broker which waiting task to hand to a worker first.\n\nWhether it works depends on the broker. Check that your broker honours AMQP queue arguments such as x-max-priority before you rely on it.\n\nGraxia OS on GitHub (bravforcode) sets priorities on its Celery queues.",
+    "urn": "urn:li:share:7520472664872861698"
+  },
+  {
+    "id": "2026-10-27-jil",
+    "at": "2026-10-27T10:00:00+07:00",
+    "kind": "jil",
+    "source": "linkedin/posts/jil/2026-10-27.md",
+    "text": "The audit cycle in the AI Audit Lab has five steps:\n\n1. Inspect the AI-written notebook and its summary.\n2. Predict which step is suspect, before any tool help.\n3. Test with deterministic checks that return only PASS or FAIL.\n4. Repair the pipeline and rerun both versions.\n5. Explain what was wrong and whether the corrected result still supports the recommendation.",
+    "urn": "urn:li:share:7520680904571199488"
+  },
+  {
+    "id": "2026-10-27-morning",
+    "at": "2026-10-27T13:00:00+07:00",
+    "kind": "morning",
+    "source": "linkedin/posts/2026-10-27.md",
+    "text": "Fixed-time snapshots beat 'whenever the job ran'. The time a number refers to is an input, not the clock of the machine that computed it.",
+    "urn": "urn:li:share:7520726373926088704"
+  },
+  {
+    "id": "2026-10-27-evening",
+    "at": "2026-10-27T20:00:00+07:00",
+    "kind": "evening",
+    "source": "linkedin/posts/evening/2026-10-27.md",
+    "text": "A common mistake with background jobs: retrying every failure automatically.\n\nA failure that retries endlessly fills the queue and hides the real bug. A dead-letter queue keeps failed messages where a person can read them, and a replay becomes a deliberate step.\n\nGraxia OS on GitHub (bravforcode) routes failed Celery tasks to a dead-letter queue, with an admin endpoint to list and replay them.",
+    "urn": "urn:li:share:7520832207368683520"
+  },
+  {
+    "id": "2026-10-29-jil",
+    "at": "2026-10-29T10:00:00+07:00",
+    "kind": "jil",
+    "source": "linkedin/posts/jil/2026-10-29.md",
+    "text": "A workflow can be invalid and still produce the same score.\n\nIn the paper's first demonstration, a scaler fitted on all the data before splitting and a scaler fitted on the training fold only gave the same mean AUC to four decimals: 0.7808 on synthetic data.\n\nA metric that does not move does not prove the pipeline is valid.",
+    "urn": "urn:li:share:7521405841372135424"
+  },
+  {
+    "id": "2026-10-29-morning",
+    "at": "2026-10-29T13:00:00+07:00",
+    "kind": "morning",
+    "source": "linkedin/posts/2026-10-29.md",
+    "text": "Why keep wage out of the path cost in a career recommender?\n\nIf wage is part of the edge cost, a high-paying job can make a path look cheaper, and the non-negative weights that Dijkstra needs stop being guaranteed.\n\nSo JobShield splits the work. Layer 1 finds paths with non-negative edge costs. Layer 2 ranks destinations using wage, so wage never changes the path search itself.\n\nThe input is 153 hand-written sample postings, so read the output as a demonstration of the method, not as labour-market fact. 145 tests in the repository: github.com/bravforcode/jobshield-ai",
+    "urn": "urn:li:share:7521451433733398530"
+  },
+  {
+    "id": "2026-10-29-evening",
+    "at": "2026-10-29T20:00:00+07:00",
+    "kind": "evening",
+    "source": "linkedin/posts/evening/2026-10-29.md",
+    "text": "Myth: adding Celery workers also scales the scheduler.\n\nFact: Celery beat should run as a single process. Run two beat processes and every scheduled job fires twice.\n\nGraxia OS on GitHub (bravforcode) runs beat as its own service in docker-compose.",
+    "urn": "urn:li:share:7521562852332326912"
+  },
+  {
+    "id": "2026-10-30-jil",
+    "at": "2026-10-30T10:00:00+07:00",
+    "kind": "jil",
+    "source": "linkedin/posts/jil/2026-10-30.md",
+    "text": "The paper's second demonstration uses a noisy proxy of the outcome, recorded after the outcome, as a stand-in for target leakage.\n\nOn the same synthetic dataset, mean AUC was 0.9869 with the proxy and 0.7808 without it.\n\nSynthetic data, one dataset, one run. The point is the size of the inflation, not a real-world estimate.",
+    "urn": "urn:li:share:7521768278986326016"
+  },
+  {
+    "id": "2026-10-30-morning",
+    "at": "2026-10-30T13:00:00+07:00",
+    "kind": "morning",
+    "source": "linkedin/posts/2026-10-30.md",
+    "text": "A recommender should be able to explain its path. If the explanation is weak, the ranking is not trustworthy either.",
+    "urn": "urn:li:share:7521814500493430784"
+  },
+  {
+    "id": "2026-10-30-evening",
+    "at": "2026-10-30T20:00:00+07:00",
+    "kind": "evening",
+    "source": "linkedin/posts/evening/2026-10-30.md",
+    "text": "Counting SQL policies is a weak way to measure access control.\n\n893 CREATE POLICY statements across 72 migration files sounds impressive. It is a count of statements, and later migrations re-create many of them. The useful questions are which rule each policy enforces, and whether a test fails if that rule changes.\n\nAdminMate AI on GitHub (bravforcode)",
+    "urn": "urn:li:share:7521920662836334593"
+  },
+  {
+    "id": "2026-11-01-jil",
+    "at": "2026-11-01T10:00:00+07:00",
+    "kind": "jil",
+    "source": "linkedin/posts/jil/2026-11-01.md",
+    "text": "Tier 1 feedback in the AI Audit Lab checks one deterministic property, such as no row appearing in both train and test sets.\n\nIt returns PASS or FAIL and does not name the cause. The learner has to find the cause.\n\nPassing Tier 1 does not mean the whole workflow is valid. It checks only the property it tests.",
+    "urn": "urn:li:share:7522492806242967552"
+  },
+  {
+    "id": "2026-11-01-morning",
+    "at": "2026-11-01T13:00:00+07:00",
+    "kind": "morning",
+    "source": "linkedin/posts/2026-11-01.md",
+    "text": "Question for readers: for a first internship, is a public repository with tests or a paper with a DOI more useful to a recruiter? Why?\n\nProjects with links: github.com/bravforcode",
+    "urn": "urn:li:share:7522538137592578048"
+  },
+  {
+    "id": "2026-11-01-evening",
+    "at": "2026-11-01T20:00:00+07:00",
+    "kind": "evening",
+    "source": "linkedin/posts/evening/2026-11-01.md",
+    "text": "A golden-file test in four steps:\n\n1. Write the expected outputs by hand, from a reviewed source.\n2. Run the calculation on the same inputs.\n3. Compare the output with the expected file.\n4. When a rule changes, the diff shows exactly which result moved.\n\nAdminMate AI's Thai tax test follows this pattern (GitHub, bravforcode).",
+    "urn": "urn:li:share:7522643985870491648"
+  },
+  {
+    "id": "2026-11-02-jil",
+    "at": "2026-11-02T10:00:00+07:00",
+    "kind": "jil",
+    "source": "linkedin/posts/jil/2026-11-02.md",
+    "text": "A tutor should not explain the specific bug until the learner has committed to a hypothesis.\n\nThe AI Audit Lab tutor works this way. Before a hypothesis is submitted, it only asks questions or explains general concepts. The paper says this rule should be enforced by a policy layer, not by a prompt alone.",
+    "urn": "urn:li:share:7522855263616389120"
+  },
+  {
+    "id": "2026-11-02-morning",
+    "at": "2026-11-02T13:00:00+07:00",
+    "kind": "morning",
+    "source": "linkedin/posts/2026-11-02.md",
+    "text": "Agent tools should not send anything on their own.\n\nIn Graxia OS a lead can be scored and a draft written automatically, but the draft waits for a human approval before anything goes out.\n\nBackground work runs on Celery in four queues: critical, default, background and dead-letter. A failing task ends up in the dead-letter queue instead of disappearing.\n\nStack: FastAPI, async SQLAlchemy, PostgreSQL, Redis and React. Docker Compose quickstart: github.com/bravforcode/graxia-os",
+    "urn": "urn:li:share:7522900604613124096"
+  },
+  {
+    "id": "2026-11-02-evening",
+    "at": "2026-11-02T20:00:00+07:00",
+    "kind": "evening",
+    "source": "linkedin/posts/evening/2026-11-02.md",
+    "text": "Three checks for any recurring job:\n\n- Is it defined in code that goes through review?\n- Does exactly one scheduler process run it?\n- Does a failed run leave a record someone can read?\n\nGraxia OS on GitHub (bravforcode) keeps its recurring jobs in code.",
+    "urn": "urn:li:share:7523008646679646208"
+  },
+  {
+    "id": "2026-11-03-jil",
+    "at": "2026-11-03T10:00:00+07:00",
+    "kind": "jil",
+    "source": "linkedin/posts/jil/2026-11-03.md",
+    "text": "The AI Audit Lab specifies eight error scenarios in three validity categories:\n\nData and pipeline leakage: feature availability, temporally invalid splits, target leakage, preprocessing leakage, group leakage, test-set reuse.\n\nEvaluation: misuse of accuracy on imbalanced labels.\n\nInterpretation: correlation described as causation.\n\nOnly two of the eight are implemented in the Phase 1 package: preprocessing leakage and target leakage. The other six are design-level."
+  },
+  {
+    "id": "2026-11-03-morning",
+    "at": "2026-11-03T13:00:00+07:00",
+    "kind": "morning",
+    "source": "linkedin/posts/2026-11-03.md",
+    "text": "An AI draft is not an action. Graxia OS keeps a human approval step before anything is sent."
+  },
+  {
+    "id": "2026-11-03-evening",
+    "at": "2026-11-03T20:00:00+07:00",
+    "kind": "evening",
+    "source": "linkedin/posts/evening/2026-11-03.md",
+    "text": "A SHA-256 manifest answers one question: has this file changed since the list was written?\n\nIt does not answer whether the file is correct. Keep those two checks separate in your release notes.\n\nCPIV v28 manifests, 268 and 171 entries: Quant-paper on GitHub (bravforcode)"
+  },
+  {
+    "id": "2026-11-05-jil",
+    "at": "2026-11-05T10:00:00+07:00",
+    "kind": "jil",
+    "source": "linkedin/posts/jil/2026-11-05.md",
+    "text": "Limits, stated first, as the paper does:\n\n- No expert review yet\n- No usability test yet\n- No learner trial yet\n- No claim of pedagogical effectiveness\n\nA framework is a design until someone tests it. The paper says so in its abstract."
+  },
+  {
+    "id": "2026-11-05-morning",
+    "at": "2026-11-05T13:00:00+07:00",
+    "kind": "morning",
+    "source": "linkedin/posts/2026-11-05.md",
+    "text": "A checksum manifest is only useful if a stranger can run it.\n\nThe CPIV review package has SHA-256 manifests: 268 entries for the full package and 171 for the CPIV-only subset.\n\nThe verifier I have is a PowerShell script (scripts/verify_sha256_manifest.ps1). Linux and macOS users would need PowerShell installed first, so the check is not portable yet. A portable version is the next step.\n\nLesson: write the verification step in a language your readers already have, then test it on a clean machine."
+  },
+  {
+    "id": "2026-11-05-evening",
+    "at": "2026-11-05T20:00:00+07:00",
+    "kind": "evening",
+    "source": "linkedin/posts/evening/2026-11-05.md",
+    "text": "Do you state, in the first paragraph of a method note, that the results are synthetic?\n\nI think a reader needs that before any number. The CPIV README says every reported result is synthetic and makes no trading claim.\n\nHow do you handle it in your own work?"
+  },
+  {
+    "id": "2026-11-06-jil",
+    "at": "2026-11-06T10:00:00+07:00",
+    "kind": "jil",
+    "source": "linkedin/posts/jil/2026-11-06.md",
+    "text": "How the demonstration data was built, so anyone can check it:\n\n- Synthetic, generated with scikit-learn make_classification\n- 4,000 records and 20 features (8 informative, 4 redundant)\n- 20% positive class, random seed 42\n- AUC averaged over 20 stratified 75/25 splits\n\nPinned versions: numpy 2.2.6 and scikit-learn 1.7.1. The code is in the paper's supplementary material under MIT."
+  },
+  {
+    "id": "2026-11-06-morning",
+    "at": "2026-11-06T13:00:00+07:00",
+    "kind": "morning",
+    "source": "linkedin/posts/2026-11-06.md",
+    "text": "A test that passes on my laptop is a start. I now run CI on Ubuntu and Windows, because a script that needs one specific shell is not reproducible."
+  },
+  {
+    "id": "2026-11-06-evening",
+    "at": "2026-11-06T20:00:00+07:00",
+    "kind": "evening",
+    "source": "linkedin/posts/evening/2026-11-06.md",
+    "text": "Three reasons to run CI on both Windows and Linux:\n\n1. Path separators differ (\\ on Windows, / on Linux).\n2. Line endings differ, which breaks some scripts and diffs.\n3. A reader on the other system is the first to hit the failure. It is better if CI does.\n\nQuant-paper on GitHub (bravforcode) runs its matrix on Ubuntu and Windows."
+  },
+  {
+    "id": "2026-11-08-jil",
+    "at": "2026-11-08T10:00:00+07:00",
+    "kind": "jil",
+    "source": "linkedin/posts/jil/2026-11-08.md",
+    "text": "The Phase 2 protocol in the AI Audit Lab is a split-plot design:\n\n1. Learners are randomized to standard AI tutoring or the Audit Lab.\n2. Both conditions use the same model, scenarios and checks.\n3. A delayed transfer task is done without AI.\n4. The primary outcome is the Tier 1 pass rate after the first repair.\n\nIt names seven threats to internal validity, each with a control. None of this has been run yet."
+  },
+  {
+    "id": "2026-11-08-morning",
+    "at": "2026-11-08T13:00:00+07:00",
+    "kind": "morning",
+    "source": "linkedin/posts/2026-11-08.md",
+    "text": "Question for readers: what is one thing you wish a student project README had told you before you started?\n\nProjects with links: github.com/bravforcode"
+  },
+  {
+    "id": "2026-11-08-evening",
+    "at": "2026-11-08T20:00:00+07:00",
+    "kind": "evening",
+    "source": "linkedin/posts/evening/2026-11-08.md",
+    "text": "One rule for database checks: run them on every push and every pull request, not only before a release.\n\nA broken access rule found on a pull request costs a review comment. The same rule found in production costs an incident.\n\nAdminMate AI on GitHub (bravforcode) runs its database test workflow on both."
+  },
+  {
+    "id": "2026-11-09-jil",
+    "at": "2026-11-09T10:00:00+07:00",
+    "kind": "jil",
+    "source": "linkedin/posts/jil/2026-11-09.md",
+    "text": "Productive failure (Kapur, 2008) holds that learners who struggle first can build more durable understanding, if the struggle is structured and followed by instruction.\n\nA meta-analysis found this for conceptual knowledge and transfer, but not for procedural knowledge (Sinha and Kapur, 2021). The AI Audit Lab borrows the first idea. Whether it works for auditing code is an open question."
+  },
+  {
+    "id": "2026-11-09-morning",
+    "at": "2026-11-09T13:00:00+07:00",
+    "kind": "morning",
+    "source": "linkedin/posts/2026-11-09.md",
+    "text": "Where should access control live in an HR app?\n\nIn AdminMate AI I put row-level security in the database, not only in the interface. A hidden button is not a permission.\n\nThe database rules are tested with pgTAP files in supabase/tests.\n\nThai tax calculations are checked with a golden-file test, so a change to a tax result shows up as a test diff.\n\nStack: React 19, TypeScript and Supabase. github.com/bravforcode/adminmate-ai"
+  },
+  {
+    "id": "2026-11-09-evening",
+    "at": "2026-11-09T20:00:00+07:00",
+    "kind": "evening",
+    "source": "linkedin/posts/evening/2026-11-09.md",
+    "text": "Myth: a test count in a README proves quality.\n\nFact: the count goes stale the day a test is added or removed. Quote the number from the latest CI run and link that run, so the reader can check it.\n\nAdminMate AI on GitHub (bravforcode)"
+  },
+  {
+    "id": "2026-11-10-jil",
+    "at": "2026-11-10T10:00:00+07:00",
+    "kind": "jil",
+    "source": "linkedin/posts/jil/2026-11-10.md",
+    "text": "Do you learn more from finding and fixing an error in a worked example, or from writing the correct solution yourself?\n\nResearch on erroneous examples reports transfer benefits for learners with enough prior knowledge (Große and Renkl, 2007). The answer depends on what you already know."
+  },
+  {
+    "id": "2026-11-10-morning",
+    "at": "2026-11-10T13:00:00+07:00",
+    "kind": "morning",
+    "source": "linkedin/posts/2026-11-10.md",
+    "text": "A rule is only as good as the test that checks it. Name the rule in the test title, so a failure tells you what broke."
+  },
+  {
+    "id": "2026-11-10-evening",
+    "at": "2026-11-10T20:00:00+07:00",
+    "kind": "evening",
+    "source": "linkedin/posts/evening/2026-11-10.md",
+    "text": "Example of a policy name that helps review (names are illustrative, not from the repository):\n\nWeak: policy_1\nClear: employees_read_own_payslips\n\nWhen a test fails, a clear name tells you which rule broke without opening the migration.\n\nRow-level security in AdminMate AI on GitHub (bravforcode)"
+  },
+  {
+    "id": "2026-11-12-jil",
+    "at": "2026-11-12T10:00:00+07:00",
+    "kind": "jil",
+    "source": "linkedin/posts/jil/2026-11-12.md",
+    "text": "Disclosure for my paper in JIL: I used AI tools for literature search, programming help and language editing.\n\nI personally ran and checked all code, verified every numerical result, and checked every reference against its original source. The paper states this in its generative-AI disclosure."
+  },
+  {
+    "id": "2026-11-12-morning",
+    "at": "2026-11-12T13:00:00+07:00",
+    "kind": "morning",
+    "source": "linkedin/posts/2026-11-12.md",
+    "text": "AI Thailand Benchmark (NECTEC), 2026: I qualified for three challenges.\n• LOTUSDIS, distant-meeting transcription (March)\n• Meeting Minutes Summarization (May)\n• LLM Trustworthiness (July)\n\nProfile and evidence index: github.com/bravforcode"
+  },
+  {
+    "id": "2026-11-12-evening",
+    "at": "2026-11-12T20:00:00+07:00",
+    "kind": "evening",
+    "source": "linkedin/posts/evening/2026-11-12.md",
+    "text": "If you list a competition on your profile, attach evidence a reviewer can check:\n\n- What you built, as a repository\n- The write-up or report you submitted\n- One thing that failed, and what you changed\n\nA certificate shows participation. The three items above show the work."
+  },
+  {
+    "id": "2026-11-13-jil",
+    "at": "2026-11-13T10:00:00+07:00",
+    "kind": "jil",
+    "source": "linkedin/posts/jil/2026-11-13.md",
+    "text": "Example of one error the AI Audit Lab targets:\n\n\"Feature X predicts churn, so feature X drives churn.\"\n\nA predictive association is not a causal driver. The framework treats this as a validity failure in the report, separate from leakage."
+  },
+  {
+    "id": "2026-11-13-morning",
+    "at": "2026-11-13T13:00:00+07:00",
+    "kind": "morning",
+    "source": "linkedin/posts/2026-11-13.md",
+    "text": "Synthetic data is fine for a method note, if the first paragraph says so."
+  },
+  {
+    "id": "2026-11-13-evening",
+    "at": "2026-11-13T20:00:00+07:00",
+    "kind": "evening",
+    "source": "linkedin/posts/evening/2026-11-13.md",
+    "text": "A method can be correct and still say nothing about trading.\n\nA result on synthetic data supports a measurement. It does not support a strategy. A strategy needs out-of-sample market data before anyone should trust it.\n\nThe CPIV note makes no trading claim (Quant-paper on GitHub, bravforcode)."
+  },
+  {
+    "id": "2026-11-15-jil",
+    "at": "2026-11-15T10:00:00+07:00",
+    "kind": "jil",
+    "source": "linkedin/posts/jil/2026-11-15.md",
+    "text": "What would you need to see before trusting an AI-written data analysis?\n\nFor me the list starts with: the split logic, the fit order of preprocessing, and a result that changes when the pipeline is wrong on purpose."
+  },
+  {
+    "id": "2026-11-15-morning",
+    "at": "2026-11-15T13:00:00+07:00",
+    "kind": "morning",
+    "source": "linkedin/posts/2026-11-15.md",
+    "text": "Question for readers: which result would make you stop trusting a backtest?\n\nProjects with links: github.com/bravforcode"
+  },
+  {
+    "id": "2026-11-15-evening",
+    "at": "2026-11-15T20:00:00+07:00",
+    "kind": "evening",
+    "source": "linkedin/posts/evening/2026-11-15.md",
+    "text": "What result would make you stop trusting a backtest?\n\nPre-registration answers this before the data arrives. The GMX G5 protocol is hashed and dated, and it names the failure outcome in advance. Without that line, almost any result can be told as a success.\n\nWhat would be your line?"
+  },
+  {
+    "id": "2026-11-16-jil",
+    "at": "2026-11-16T10:00:00+07:00",
+    "kind": "jil",
+    "source": "linkedin/posts/jil/2026-11-16.md",
+    "text": "Write the failure criteria before you run the test.\n\nThe Phase 2 protocol of the AI Audit Lab names its primary outcome, its controls and its threats in advance. Without that, any result can be described as a success."
+  },
+  {
+    "id": "2026-11-16-morning",
+    "at": "2026-11-16T13:00:00+07:00",
+    "kind": "morning",
+    "source": "linkedin/posts/2026-11-16.md",
+    "text": "In April 2026 I was selected as a participant in the Mahidol × Harvard Health Systems Innovation Lab Hackathon."
+  },
+  {
+    "id": "2026-11-16-evening",
+    "at": "2026-11-16T20:00:00+07:00",
+    "kind": "evening",
+    "source": "linkedin/posts/evening/2026-11-16.md",
+    "text": "Hash the protocol before you collect the data.\n\nA timestamp and a hash cannot be changed quietly. A written promise can. That difference is the point of a prospective study.\n\nGMX G5 protocol on GitHub (bravforcode)"
+  },
+  {
+    "id": "2026-11-17-jil",
+    "at": "2026-11-17T10:00:00+07:00",
+    "kind": "jil",
+    "source": "linkedin/posts/jil/2026-11-17.md",
+    "text": "Before any claim that an educational tool works, check:\n\n- Expert review of the design\n- A pilot with real learners\n- A power simulation from pilot data\n- Red-team testing of the tutor policy\n- A pre-registered outcome\n\nThe AI Audit Lab has none of these yet. Its paper is a Phase 1 design."
+  },
+  {
+    "id": "2026-11-17-morning",
+    "at": "2026-11-17T13:00:00+07:00",
+    "kind": "morning",
+    "source": "linkedin/posts/2026-11-17.md",
+    "text": "Limits are part of the result. Say them first."
+  },
+  {
+    "id": "2026-11-17-evening",
+    "at": "2026-11-17T20:00:00+07:00",
+    "kind": "evening",
+    "source": "linkedin/posts/evening/2026-11-17.md",
+    "text": "Write the limitations section before the results section. Check:\n\n- What the method cannot show\n- What data it was tested on\n- What would change the conclusion\n\nA reader who cannot find these will assume the method shows everything.\n\nQuant-paper on GitHub (bravforcode)"
+  }
+]
