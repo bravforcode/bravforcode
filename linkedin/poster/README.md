@@ -8,8 +8,10 @@ Slots (Thailand time): JIL paper 10:00, morning 13:00, evening 20:00.
 - `build_schedule.py` reads the drafts in `linkedin/posts/` and writes `schedule.json`. Edit the drafts, rebuild, redeploy.
 - `poster.py` publishes due items. Stdlib only. `--dry-run` prints what would post without any network call.
 - `test_poster.py` unit tests: `python3 -m unittest -v test_poster`
-- `systemd/` service and 5-minute timer.
-- `env.example` variables the service needs.
+- `refresh_token.py` renews the access token 14 days before it expires, using the stored refresh token. Tests: `python3 -m unittest -v test_refresh_token`
+- `notify-failure.sh` alert run when the poster or the renewal fails: a journal line, plus a Telegram message when configured.
+- `systemd/` poster service and 5-minute timer, daily token-renewal service and timer, and the alert unit.
+- `env.example`, `oauth.env.example`, `alert.env.example` variables the services need.
 
 ## Safety rules built in
 - An item publishes only within 6 hours after its slot. Older items are marked `missed`, never posted late.
@@ -31,6 +33,8 @@ Slots (Thailand time): JIL paper 10:00, morning 13:00, evening 20:00.
 6. Dry run first: `sudo -u linkedin-poster python3 /opt/linkedin-poster/poster.py --dry-run --schedule /opt/linkedin-poster/schedule.json`
 7. Enable: `sudo systemctl enable --now linkedin-poster.timer`
 8. Watch: `journalctl -u linkedin-poster -f`
+9. Alerts: copy `notify-failure.sh` to `/usr/local/sbin/linkedin-poster-notify-failure` (mode 755) and create `/etc/linkedin-poster/alert.env` from `alert.env.example` (mode 600). Test with `sudo systemctl start linkedin-poster-notify@alert-test.service`.
+10. Token renewal: copy `refresh_token.py` to `/opt/linkedin-poster/`, create `/etc/linkedin-poster/oauth.env` from `oauth.env.example` (mode 600), and keep `/etc/linkedin-poster/refresh.json` (mode 600) from the OAuth sign-in: `{"refresh_token", "refresh_token_expires_in", "obtained_at", "expires_in"}`. Then `sudo systemctl enable --now linkedin-token-refresh.timer`.
 
 ## Updating the schedule
 Run `build_schedule.py` in the repo, copy the new `schedule.json` to `/opt/linkedin-poster/`. The next timer run picks it up.
@@ -47,4 +51,7 @@ Expect `"active":true`, a `scope` containing `w_member_social`, and `expires_at`
 
 ## Failures and token renewal
 - A failed item is recorded as `failed` and is not retried automatically. The journal shows it. To retry while its window is still open, delete its entry from `/var/lib/linkedin-poster/state.json` and run the service once.
-- When the access token expires, every item in its window fails. Renew the token, update `/etc/linkedin-poster/env`, then retry the failed items as above.
+- A failed run of either service starts `linkedin-poster-notify@<unit>.service`, which logs under `linkedin-poster-alert` and sends at most one Telegram message per unit per hour.
+- `linkedin-token-refresh.timer` checks daily and renews the access token when 14 days or less remain. It rewrites only the `LINKEDIN_ACCESS_TOKEN` line of `/etc/linkedin-poster/env`.
+- LinkedIn does not extend the refresh token. From 30 days before it ends, the renewal unit fails daily to raise the alert: sign in through OAuth again and replace `refresh.json`.
+- If the access token expires anyway, every item in its window fails. Renew the token, then retry the failed items as above.

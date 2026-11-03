@@ -1,0 +1,10 @@
+[Unit]
+Description=Check the LinkedIn access token daily and renew it 14 days before expiry
+
+[Timer]
+OnCalendar=*-*-* 02:00:00
+Persistent=true
+Unit=linkedin-token-refresh.service
+
+[Install]
+WantedBy=timers.target
