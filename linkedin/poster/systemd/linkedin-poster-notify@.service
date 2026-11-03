@@ -1,0 +1,14 @@
+[Unit]
+Description=linkedin-poster: alert when %i fails
+
+[Service]
+Type=oneshot
+User=linkedin-poster
+Group=linkedin-poster
+EnvironmentFile=-/etc/linkedin-poster/alert.env
+ExecStart=/usr/local/sbin/linkedin-poster-notify-failure %i
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/linkedin-poster

@@ -1,0 +1,15 @@
+[Unit]
+Description=Renew the LinkedIn access token before it expires
+Wants=network-online.target
+After=network-online.target
+OnFailure=linkedin-poster-notify@%N.service
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/linkedin-poster/oauth.env
+ExecStart=/usr/bin/python3 /opt/linkedin-poster/refresh_token.py --env /etc/linkedin-poster/env --refresh /etc/linkedin-poster/refresh.json
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/etc/linkedin-poster
